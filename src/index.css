@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+h1, h2, li
+{
+  font-family: 'Orbitron', sans-serif;
+}
+
+p
+{
+  font-family: 'Cuprum', sans-serif;
+}
