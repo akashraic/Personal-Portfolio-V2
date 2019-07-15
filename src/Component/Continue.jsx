@@ -1,8 +1,25 @@
 import React, {Component} from 'react';
 import {Container, Row, Col, Button} from 'react-bootstrap';
+import './Home.jsx'
 import './Continue.css';
 
 class Continue extends Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            cont: true
+        };
+
+        this.changeState = this.changeState.bind(this)
+    }
+
+    changeState() {
+        this.props.choice(this.state.cont);
+        console.log()
+    }
+
     render() {
         return (
             <div className="Continue">
@@ -10,7 +27,7 @@ class Continue extends Component {
                     <Row className="btn-wrapper-wrap">
                         <Col lg={4}/>
                         <Col lg={4} className="btn-wrapper">
-                            <Button href="#" className="btn" block>Continue</Button>
+                            <Button className="btn" block onClick={this.changeState}>Continue</Button>
                         </Col>
                         <Col lg={4}/>
                     </Row>

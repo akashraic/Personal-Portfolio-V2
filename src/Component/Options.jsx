@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Container, Row, Col, Image} from 'react-bootstrap';
-import './Home.css';
+import './Options.css';
 
 class Options extends Component {
     render() {
@@ -9,13 +9,13 @@ class Options extends Component {
                 <Container>
                     <Row className="Categories">
                         <Col lg={4}>
-                            <Image src="assets/Photo.png" className="Photography" fluid roundedCircle>Akash Rai</Image>
+                            <Image src="assets/Photo.png" className="Photography" fluid roundedCircle/>
                         </Col>
                         <Col lg={4}>
-                            <Image src="assets/Prog.png" className="Programming" fluid roundedCircle>Akash Rai</Image>
+                            <Image src="assets/Prog.png" className="Programming" fluid roundedCircle/>
                         </Col>
                         <Col lg={4}>
-                            <Image src="assets/Other.png" className="Other" fluid roundedCircle>Akash Rai</Image>
+                            <Image src="assets/Other.png" className="Other" fluid roundedCircle/>
                         </Col>
                     </Row>
 
