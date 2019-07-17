@@ -1,0 +1,28 @@
+.Categories-wrap{
+    width: 80%;
+    height: auto;
+
+}
+
+.Categories img{
+    width: 100%;
+    height: auto;
+    padding-bottom:5%;
+}
+
+.label{
+    text-align: center;
+    font-size: 40px;
+    margin: 0 0 0 5%;
+    Display: none;
+}
+
+#project{
+    margin: 0;
+    text-align: left;
+    font-size: 32.5px;
+}
+
+a:hover + label{
+    display:block;
+}
