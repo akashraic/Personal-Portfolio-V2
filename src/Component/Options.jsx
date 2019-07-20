@@ -9,7 +9,7 @@ class Options extends Component {
                 <Container className="Categories-wrap">
                     <Row className="Categories">
                         <Col lg={4}>
-                            <a href="#"><Image src="assets/Photo.png"  className="Photography" fluid roundedCircle/></a>
+                            <a href="./Photography.jsx"><Image src="assets/Photo.png"  className="Photography" fluid roundedCircle/></a>
                             <label className="label">Photography</label>
                         </Col>
                         <Col lg={4}>
