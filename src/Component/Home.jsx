@@ -23,15 +23,6 @@ class Home extends Component {
     render() {
 
         const cont = this.state.cont;
-        let button;
-
-        if (cont) {
-            button = <Options/>
-        }
-
-        else {
-            button = <Continue choice={this.handleClick}/>
-        }
 
         return (
             <div className="Home">
@@ -51,7 +42,7 @@ class Home extends Component {
                         </Col>
                         <Col lg={4}/>
                     </Row>*/}
-                    {button}
+                    {cont ? (<Options/>) : (<Continue choice={this.handleClick}/>)}
                 </Container>
             </div>
         );
