@@ -1,12 +1,16 @@
 import React, {Component} from 'react';
-import {Container, Row, Col, Button, SafeAnchor as handleClick} from 'react-bootstrap';
+import {Container, Row, Col} from 'react-bootstrap';
 import './Home.css';
 import Continue from './Continue.jsx';
 import Options from './Options.jsx'
+import {BrowserRouter as Router, Link} from "react-router-dom";
+import {Route, Switch} from "react-router";
+import Routes from "./Routes";
+import Header from "./Header";
 
 class Home extends Component {
 
-    constructor(props) {
+/*    constructor(props) {
         super(props);
 
         this.state = {
@@ -18,31 +22,21 @@ class Home extends Component {
 
     handleClick() {
         this.setState({cont: true});
-    }
+    }*/
 
     render() {
 
-        const cont = this.state.cont;
+/*        const cont = this.state.cont;*/
 
         return (
             <div className="Home">
                 <Container>
-                    <Row className="Logo">
-                        <Col lg={3}/>
-                        <Col lg={6}>
-                            <h1 className="Akash">Akash Rai</h1>
-                        </Col>
-                        <Col lg={3}/>
-                    </Row>
+                    <Header/>
 
-{/*                    <Row className="btn-wrapper-wrap">
-                        <Col lg={4}/>
-                        <Col lg={4} className="btn-wrapper">
-                            <Button className="btn" onClick={this.handleClick} block>Continue</Button>
-                        </Col>
-                        <Col lg={4}/>
-                    </Row>*/}
-                    {cont ? (<Options/>) : (<Continue choice={this.handleClick}/>)}
+                    {/*<Route path="/Options" component={()=>cont ? (<Options/>) : (<Continue choice={this.handleClick}/>)} />*/}
+                    {/*{cont ? (<Options/>) : (<Continue choice={this.handleClick}/>)}*/}
+                    <Routes/>
+
                 </Container>
             </div>
         );

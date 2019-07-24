@@ -6,17 +6,17 @@ import Home from "./Home";
 import Photography from "./Photography";
 import Projects from "./Projects";
 import Programming from "./Programming";
-import {Route} from "react-router";
+import {Route, Switch} from "react-router";
+import Routes from "./Routes";
 
 class Options extends Component {
     render() {
         return (
-            <Router>
             <div className="Options">
                 <Container className="Categories-wrap">
                     <Row className="Categories">
                         <Col lg={4}>
-                            <Link to="/Photography"><Image src="assets/Photo.png"  className="Photography" fluid roundedCircle/></Link>
+                            <Link to="/Photography"><Image src="assets/Photo.png" className="Photography" fluid roundedCircle/></Link>
                             <label className="label">Photography</label>
                         </Col>
                         <Col lg={4}>
@@ -31,11 +31,6 @@ class Options extends Component {
 
                </Container>
             </div>
-                <Route exact path="/" component={Home} />
-                <Route path="/Photography" component={Photography} />
-                <Route path="/Programming" component={Programming} />
-                <Route path="/Projects" component={Projects} />
-            </Router>
         );
     }
 }
