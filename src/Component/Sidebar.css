@@ -1,0 +1,11 @@
+.Sidebar-wrap {
+    display: flex;
+}
+
+.Sidebar {
+    padding: 5%;
+    width: 40%;
+
+}
+
+

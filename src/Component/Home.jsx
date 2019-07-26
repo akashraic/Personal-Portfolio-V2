@@ -31,7 +31,6 @@ class Home extends Component {
         return (
             <div className="Home">
                 <Container>
-                    <Header/>
 
                     {/*<Route path="/Options" component={()=>cont ? (<Options/>) : (<Continue choice={this.handleClick}/>)} />*/}
                     {/*{cont ? (<Options/>) : (<Continue choice={this.handleClick}/>)}*/}

@@ -3,6 +3,7 @@ import {Container, Row, Col, Button} from 'react-bootstrap';
 import './Home.jsx'
 import './Continue.css';
 import {Link} from "react-router-dom";
+import Header from "./Header";
 
 class Continue extends Component {
 
@@ -10,7 +11,7 @@ class Continue extends Component {
         super(props);
 
         this.state = {
-            cont: true
+            cont: false
         };
 
         this.changeState = this.changeState.bind(this)
@@ -24,12 +25,13 @@ class Continue extends Component {
     render() {
         return (
             <div className="Continue">
+                <Header/>
                 <Container>
                     <Row className="btn-wrapper-wrap">
                         <Col lg={4}/>
                         <Col lg={4} className="btn-wrapper">
                             {/*<Button className="btn" block onClick={this.changeState}>Continue</Button>*/}
-                            <Button className="btn" block><Link to='/Options'>Continue</Link></Button>
+                            <Link to='/Options' className={"anchor"}><Button className="btn" block to='/Options'>Continue</Button></Link>
                         </Col>
                         <Col lg={4}/>
                     </Row>

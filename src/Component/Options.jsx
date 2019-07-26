@@ -8,12 +8,16 @@ import Projects from "./Projects";
 import Programming from "./Programming";
 import {Route, Switch} from "react-router";
 import Routes from "./Routes";
+import Header from "./Header";
 
 class Options extends Component {
+
     render() {
         return (
             <div className="Options">
+                <Header/>
                 <Container className="Categories-wrap">
+
                     <Row className="Categories">
                         <Col lg={4}>
                             <Link to="/Photography"><Image src="assets/Photo.png" className="Photography" fluid roundedCircle/></Link>
