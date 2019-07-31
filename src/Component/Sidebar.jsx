@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 import './Sidebar.css';
 import Home from './Home.jsx';
 import {Route} from "react-router";
@@ -12,36 +12,62 @@ import Options from "./Options";
 // path matches the current URL.
 const routes = [
     {
+        label: "Cars",
         path: "/",
         exact: true,
         // sidebar: () => ,
         main: () => <Home/>
     },
     {
+        label: "Concert",
         path: "/Photography",
         // sidebar: () => <div>bubblegum!</div>,
         main: () => <Photography/>
     },
     {
+        label: "Events",
         path: "/Options",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
-    }
+    },
+    {
+        label: "Headshots",
+        path: "/Options",
+        // sidebar: () => <div>shoelaces!</div>,
+        main: () => <Options/>
+    },
+    {
+        label: "Landscape",
+        path: "/Options",
+        // sidebar: () => <div>shoelaces!</div>,
+        main: () => <Options/>
+    },
+    {
+        label: "Portraits",
+        path: "/Options",
+        // sidebar: () => <div>shoelaces!</div>,
+        main: () => <Options/>
+    },
+    {   label: "Street",
+        path: "/Options",
+        // sidebar: () => <div>shoelaces!</div>,
+        main: () => <Options/>
+    },
 ];
 
 function Sidebar() {
     return (
             <div className="Sidebar-wrap">
                 <div className="Sidebar">
-                    <ul style={{ listStyleType: "none", padding: 0 }}>
-                        <li>
-                            <Link to="/">Home</Link>
+                    <ul className="nav-list">
+                        <li className="list">
+                            <Link to="/" className="list-anchor">Home</Link>
                         </li>
-                        <li>
-                            <Link to="/Photography">Bubblegum</Link>
+                        <li className="list">
+                            <Link to="/Photography" className="list-anchor">Bubblegum</Link>
                         </li>
-                        <li>
-                            <Link to="/Options">Shoelaces</Link>
+                        <li className="list">
+                            <Link to="/Options" className="list-anchor">Shoelaces</Link>
                         </li>
                     </ul>
 
@@ -62,7 +88,7 @@ function Sidebar() {
                     ))}
                 </div>
 
-                <div style={{ flex: 1, padding: "10px" }}>
+{/*                <div style={{ flex: 1, padding: "10px" }}>
                     {routes.map((route, index) => (
                         // Render more <Route>s with the same paths as
                         // above, but different components this time.
@@ -73,7 +99,7 @@ function Sidebar() {
                             component={route.main}
                         />
                     ))}
-                </div>
+                </div>*/}
             </div>
     );
 }

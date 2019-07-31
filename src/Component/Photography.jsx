@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {Container, Row,Col} from 'react-bootstrap';
 import './Photography.css';
+import Sidebar from "./Sidebar";
+import * as firebase from "firebase/app";
 
 class Photography extends Component {
     render() {
@@ -8,9 +10,10 @@ class Photography extends Component {
             <div className="Photography-wrap">
                 <Container className="Photography">
                     <Row>
-                        <Col lg={2}>
+                        <Col lg={1}>
+                            <Sidebar />
                         </Col>
-                        <Col lg={10}>
+                        <Col lg={11}>
                             <h1 className="Title">Photography</h1>
                         </Col>
                     </Row>

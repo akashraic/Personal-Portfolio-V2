@@ -3,9 +3,31 @@
 }
 
 .Sidebar {
-    padding: 5%;
-    width: 40%;
+    margin: 50% 0 0 -125%;
+    width: 100%;
+    height: auto;
+}
 
+.nav-list {
+    list-style: none;
+    text-align:left;
+    padding: 20% 0 0 0;
+    margin: 35% 0 0 0;
+    width:100%;
+    height:auto;
+}
+.list-anchor {
+    color: #F5F5F5;
+}
+
+.list {
+    padding: 5% 0 5% 0;
+}
+
+.list-anchor:hover{
+    color: #9b9b9b;
+    transition: 0.3s;
+    text-decoration: none;
 }
 
 

@@ -9,10 +9,10 @@ class Programming extends Component {
             <div className="Programming-wrap">
                 <Container className="Programming">
                     <Row>
-                        <Col lg={2}>
+                        <Col lg={1} className="Sidebar-area">
                             <Sidebar/>
                         </Col>
-                        <Col lg={10}>
+                        <Col lg={11}>
                             <h1 className="Title">Programming</h1>
                         </Col>
                     </Row>

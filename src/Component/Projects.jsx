@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Container, Row,Col} from 'react-bootstrap';
 import './Projects.css';
+import Sidebar from "./Sidebar";
 
 class Projects extends Component {
     render() {
@@ -8,9 +9,10 @@ class Projects extends Component {
             <div className="Projects-wrap">
                 <Container className="Projects">
                     <Row>
-                        <Col lg={2}>
+                        <Col lg={1}>
+                            <Sidebar/>
                         </Col>
-                        <Col lg={10}>
+                        <Col lg={11}>
                             <h1 className="Title">Other Projects</h1>
                         </Col>
                     </Row>
