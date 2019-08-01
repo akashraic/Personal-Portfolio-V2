@@ -31,7 +31,7 @@ class Continue extends Component {
                         <Col lg={4}/>
                         <Col lg={4} className="btn-wrapper">
                             {/*<Button className="btn" block onClick={this.changeState}>Continue</Button>*/}
-                            <Link to='/Options' className={"anchor"}><Button className="btn" block to='/Options'>Continue</Button></Link>
+                            <Link to='/Options' className={"anchor"}><Button className="btn" block>Continue</Button></Link>
                         </Col>
                         <Col lg={4}/>
                     </Row>

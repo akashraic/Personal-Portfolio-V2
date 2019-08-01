@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Component} from 'react';
 import {Link } from "react-router-dom";
 import './Sidebar.css';
 import Home from './Home.jsx';
@@ -52,15 +52,29 @@ const routes = [
         path: "/Options",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
-    },
+    }
 ];
 
-function Sidebar() {
-    return (
+
+class Sidebar extends Component {
+
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                option: " ",
+                choice: " "
+            };
+
+            console.log(this.props);
+        }
+
+    render() {
+        return (
             <div className="Sidebar-wrap">
                 <div className="Sidebar">
                     <ul className="nav-list">
-                        <li className="list">
+{/*                        <li className="list">
                             <Link to="/" className="list-anchor">Home</Link>
                         </li>
                         <li className="list">
@@ -68,7 +82,12 @@ function Sidebar() {
                         </li>
                         <li className="list">
                             <Link to="/Options" className="list-anchor">Shoelaces</Link>
+                        </li>*/}
+                        {routes.map((route, index) => (
+                        <li className="list">
+                            <Link key={index} to={route.path} className="list-anchor">{route.label}</Link>
                         </li>
+                        ))}
                     </ul>
 
                     {routes.map((route, index) => (
@@ -88,7 +107,7 @@ function Sidebar() {
                     ))}
                 </div>
 
-{/*                <div style={{ flex: 1, padding: "10px" }}>
+{/*                <div>
                     {routes.map((route, index) => (
                         // Render more <Route>s with the same paths as
                         // above, but different components this time.
@@ -101,7 +120,8 @@ function Sidebar() {
                     ))}
                 </div>*/}
             </div>
-    );
+        );
+    }
 }
 
 export default Sidebar;

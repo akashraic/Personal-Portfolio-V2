@@ -4,13 +4,21 @@ import './Projects.css';
 import Sidebar from "./Sidebar";
 
 class Projects extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            option: "Proj"
+        };
+        // console.log(this.state.option);
+    }
     render() {
         return (
             <div className="Projects-wrap">
                 <Container className="Projects">
                     <Row>
                         <Col lg={1}>
-                            <Sidebar/>
+                            <Sidebar choice={this.state.option}/>
                         </Col>
                         <Col lg={11}>
                             <h1 className="Title">Other Projects</h1>
