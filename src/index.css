@@ -13,12 +13,12 @@ code {
     monospace;
 }
 
-h1, h2, li
+h1, h2
 {
   font-family: 'Orbitron', sans-serif;
 }
 
-p, label
+p, label, li
 {
   font-family: 'Cuprum', sans-serif;
 }

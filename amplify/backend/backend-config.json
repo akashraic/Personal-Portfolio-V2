@@ -1,0 +1,15 @@
+{
+	"auth": {
+		"personalportfoliov299e4102b": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	},
+	"storage": {
+		"websitephotos": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}

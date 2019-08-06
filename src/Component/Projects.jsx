@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Container, Row,Col} from 'react-bootstrap';
-import './Projects.css';
+import './Main_content.css';
 import Sidebar from "./Sidebar";
 
 class Projects extends Component {
@@ -17,7 +17,7 @@ class Projects extends Component {
             <div className="Projects-wrap">
                 <Container className="Projects">
                     <Row>
-                        <Col lg={1}>
+                        <Col lg={1} className="Sidebar-area">
                             <Sidebar choice={this.state.option}/>
                         </Col>
                         <Col lg={11}>

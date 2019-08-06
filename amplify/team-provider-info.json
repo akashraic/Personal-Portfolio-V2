@@ -1,0 +1,19 @@
+{
+    "website": {
+        "awscloudformation": {
+            "AuthRoleName": "personalportfoliov2-website-20190803223610-authRole",
+            "UnauthRoleArn": "arn:aws:iam::749423027132:role/personalportfoliov2-website-20190803223610-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::749423027132:role/personalportfoliov2-website-20190803223610-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "personalportfoliov2-website-20190803223610-deployment",
+            "UnauthRoleName": "personalportfoliov2-website-20190803223610-unauthRole",
+            "StackName": "personalportfoliov2-website-20190803223610",
+            "StackId": "arn:aws:cloudformation:us-east-1:749423027132:stack/personalportfoliov2-website-20190803223610/9e4d9130-b660-11e9-a766-0ad7f2019cc4"
+        },
+        "categories": {
+            "auth": {
+                "personalportfoliov299e4102b": {}
+            }
+        }
+    }
+}

@@ -6,10 +6,13 @@
 
 .Title {
     text-align:center;
+    color: #F5F5F5;
+    margin: 5% 0 0 -5%;
 }
 
 .Sidebar-area {
     margin:auto;
+    padding:0;
 }
 
 

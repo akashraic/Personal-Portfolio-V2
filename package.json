@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@firebase/storage": "^0.3.8",
+    "@google-cloud/storage": "^3.0.4",
     "@trendmicro/react-sidenav": "^0.4.5",
+    "aws-amplify-react": "^2.3.12",
     "bootstrap": "^4.3.1",
     "firebase": "^6.3.3",
     "react": "^16.8.6",

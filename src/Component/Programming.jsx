@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Container, Row,Col} from 'react-bootstrap';
-import './Programming.css';
+import './Main_content.css';
 import Sidebar from "./Sidebar.jsx";
 
 class Programming extends Component {
