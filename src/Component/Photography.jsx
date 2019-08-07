@@ -15,17 +15,33 @@ class Photography extends Component {
             this.state = {
                 option: "Photo",
                 fileURL: [],
+                //Default parent state
+                fire_path: "Photo Gallery/Best",
             };
             console.log(this.state.option);
+            console.log(this.state.fire_path);
+
+
+            this.childHandler = this.childHandler.bind(this)
+        }
+
+        childHandler(dataFromChild) {
+            // log our state before and after we updated it
+            console.log('%cPrevious Parent State: ' + JSON.stringify(this.state), "color:orange");
+
+            this.setState({
+                fire_path: dataFromChild,
+                fileURL: []
+            },() => console.log('Updated Parent State:', this.state));
         }
 
 
-    componentDidMount() {
+    componentDidUpdate() {
         // Get a reference to the storage service, which is used to create references in your storage bucket
         let storage = firebase.storage();
         let storageRef = storage.ref();
         // Create a reference under which you want to list
-        let listRef = storageRef.child('Photo Gallery/Cars');
+        let listRef = storageRef.child(this.state.fire_path);
 
         // Find all the prefixes and items.
         listRef.listAll().then((res) => {
@@ -52,7 +68,7 @@ class Photography extends Component {
                 <Container className="Photography">
                     <Row>
                         <Col lg={1} className="Sidebar-area">
-                            <Sidebar choice={this.state.option}/>
+                            <Sidebar choice={this.state.option} action={this.childHandler}/>
                         </Col>
                         <Col lg={11}>
                             <h1 className="Title">Photography</h1>

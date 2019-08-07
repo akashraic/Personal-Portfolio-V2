@@ -13,9 +13,10 @@ import Options from "./Options";
 const routes = [
     {
         label: "Cars",
-        path: "/",
+        path: "/Photography",
         exact: true,
         option: "Photo",
+        fire_path: "Photo Gallery/Cars",
         // sidebar: () => ,
         main: () => <Home/>
     },
@@ -23,75 +24,76 @@ const routes = [
         label: "Concert",
         path: "/Photography",
         option: "Photo",
+        fire_path: "Photo Gallery/Concert",
         // sidebar: () => <div>bubblegum!</div>,
         main: () => <Photography/>
     },
     {
         label: "Events",
-        path: "/Options",
+        path: "/Photography",
         option: "Photo",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
     },
     {
         label: "Headshots",
-        path: "/Options",
+        path: "/Photography",
         option: "Photo",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
     },
     {
         label: "Landscape",
-        path: "/Options",
+        path: "/Photography",
         option: "Photo",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
     },
     {
         label: "Portraits",
-        path: "/Options",
+        path: "/Photography",
         option: "Photo",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
     },
     {   label: "Street",
-        path: "/Options",
+        path: "/Photography",
         option: "Photo",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
     },
     {   label: "Holisitc Bodies",
-        path: "/Options",
+        path: "/Photography",
         option: "Prog",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
     },
     {   label: "Gifting Guru",
-        path: "/Options",
+        path: "/Photography",
         option: "Prog",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
     },
     {   label: "Battle of the Bands",
-        path: "/Options",
+        path: "/Photography",
         option: "Prog",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
     },
     {   label: "Battle of the Bands (Marketing Lead)",
-        path: "/Options",
+        path: "/Photography",
         option: "Proj",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
     },
     {   label: "Battle of the Bands (Event Organizer)",
-        path: "/Options",
+        path: "/Photography",
         option: "Proj",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
     },
     {   label: "Musicians@Ryerson",
-        path: "/Options",
+        path: "/Photography",
         option: "Proj",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
@@ -106,10 +108,12 @@ class Sidebar extends Component {
 
             this.state = {
                 option: " ",
-                choice: " "
+                choice: " ",
+                action: " ",
             };
 
             console.log(this.props.choice);
+            console.log(this.props.action);
         }
 
     render() {
@@ -128,7 +132,8 @@ class Sidebar extends Component {
                         </li>*/}
                         {routes.filter(routes => routes.option === this.props.choice).map((route, index) => (
                         <li className="list">
-                            <Link key={index} to={route.path} className="list-anchor">{route.label}</Link>
+
+                            <Link key={index} to={route.path} className="list-anchor" onClick={() => this.props.action(route.fire_path)}>{route.label} </Link>
                         </li>
                         ))}
                     </ul>
