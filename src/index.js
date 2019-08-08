@@ -4,7 +4,6 @@ import './index.css';
 import App from './App.jsx';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
-import Amplify, {Storage} from 'aws-amplify';
 import config from './aws-exports';
 import awsExports from './aws-exports';
 // import { withAuthenticator } from 'aws-amplify-react';

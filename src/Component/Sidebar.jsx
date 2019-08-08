@@ -32,6 +32,7 @@ const routes = [
         label: "Events",
         path: "/Photography",
         option: "Photo",
+        fire_path: "Photo Gallery/Event",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
     },
@@ -39,6 +40,7 @@ const routes = [
         label: "Headshots",
         path: "/Photography",
         option: "Photo",
+        fire_path: "Photo Gallery/Headshots",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
     },
@@ -46,6 +48,7 @@ const routes = [
         label: "Landscape",
         path: "/Photography",
         option: "Photo",
+        fire_path: "Photo Gallery/Landscape",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
     },
@@ -53,12 +56,14 @@ const routes = [
         label: "Portraits",
         path: "/Photography",
         option: "Photo",
+        fire_path: "Photo Gallery/Portraits",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
     },
     {   label: "Street",
         path: "/Photography",
         option: "Photo",
+        fire_path: "Photo Gallery/Street",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
     },
@@ -118,7 +123,6 @@ class Sidebar extends Component {
 
     render() {
         return (
-            <div className="Sidebar-wrap">
                 <div className="Sidebar">
                     <ul className="nav-list">
 {/*                        <li className="list">
@@ -132,7 +136,6 @@ class Sidebar extends Component {
                         </li>*/}
                         {routes.filter(routes => routes.option === this.props.choice).map((route, index) => (
                         <li className="list">
-
                             <Link key={index} to={route.path} className="list-anchor" onClick={() => this.props.action(route.fire_path)}>{route.label} </Link>
                         </li>
                         ))}
@@ -153,7 +156,7 @@ class Sidebar extends Component {
                             component={route.sidebar}
                         />
                     ))}
-                </div>
+
 
 {/*                <div>
                     {routes.map((route, index) => (
@@ -167,7 +170,7 @@ class Sidebar extends Component {
                         />
                     ))}
                 </div>*/}
-            </div>
+                </div>
         );
     }
 }
