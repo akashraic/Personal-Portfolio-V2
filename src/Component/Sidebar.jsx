@@ -121,24 +121,20 @@ class Sidebar extends Component {
             console.log(this.props.action);
         }
 
+
     render() {
         return (
                 <div className="Sidebar">
+                    {/*<div><Link to="/">Akash Rai</Link></div>*/}
                     <ul className="nav-list">
-{/*                        <li className="list">
-                            <Link to="/" className="list-anchor">Home</Link>
-                        </li>
-                        <li className="list">
-                            <Link to="/Photography" className="list-anchor">Bubblegum</Link>
-                        </li>
-                        <li className="list">
-                            <Link to="/Options" className="list-anchor">Shoelaces</Link>
-                        </li>*/}
+                        {/*<a href="javascript:void(0)" className="close" onClick={this.closeSM}></a>*/}
+                        <div className="sm-wrapper">
                         {routes.filter(routes => routes.option === this.props.choice).map((route, index) => (
                         <li className="list">
                             <Link key={index} to={route.path} className="list-anchor" onClick={() => this.props.action(route.fire_path)}>{route.label} </Link>
                         </li>
                         ))}
+                        </div>
                     </ul>
 
                     {routes.map((route, index) => (

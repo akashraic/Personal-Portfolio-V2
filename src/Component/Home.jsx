@@ -25,13 +25,12 @@ class Home extends Component {
 
         return (
             <div className="Home">
-                <Container className="Home-container">
+                {/*<Container className="Home-container">*/}
 
                     {/*<Route path="/Options" component={()=>cont ? (<Options/>) : (<Continue choice={this.handleClick}/>)} />*/}
                     {/*{cont ? (<Options/>) : (<Continue choice={this.handleClick}/>)}*/}
                     <Routes/>
 
-                </Container>
             </div>
         );
     }

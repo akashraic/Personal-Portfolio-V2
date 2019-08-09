@@ -29,10 +29,34 @@
     transition: 0.3s;
 }
 
+.Image-and-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
 .Image-container {
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.Image-container .Photo-Images{
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.Photography {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.Title-row, .Image-and-sidebar {
+    margin-left: 0;
+    margin-right: 0;
 
 }
 
-.Image-wrap{
-
+.Title-col, .Image-container {
+    padding-left: 0;
+    padding-right: 0;
 }

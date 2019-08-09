@@ -3,6 +3,7 @@ import {Container, Row, Col, Image} from 'react-bootstrap';
 import './Main_content.css';
 import Sidebar from "./Sidebar";
 import * as firebase from 'firebase'
+import Lightbox from 'react-lightbox-component';
 /*
 import '@firebase/firestore';
 import '@firebase/auth';
@@ -20,7 +21,7 @@ class Photography extends Component {
                 //Default parent state
                 fire_path: "",
                 bool: true
-            }
+            };
 
             console.log(this.state.option);
             console.log(this.state.fire_path);
@@ -58,7 +59,7 @@ class Photography extends Component {
                             // console.log(url);
                             let joined = this.state.fileURL.concat(url);
                             this.setState({fileURL: joined});
-                            console.log(this.state);
+                            //console.log(this.state);
                         }).catch(function (error) {
                             // Handle any errors
                             console.log(error);
@@ -72,20 +73,29 @@ class Photography extends Component {
         }
 
     render() {
+            let path = this.state.fileURL.length;
+            // array of N elements, where N is the number of rows needed
+            const rows = [...Array(Math.ceil(path/4))];
+            // chunk the products into the array of rows
+            const imgRows = rows.map((row, index) => this.state.fileURL.slice(index * 4, index * 4 + 4) );
+            // Map the rows as div.row
+            const imgURL = imgRows.map((row, index) => (
+                <Col className="Image-container" >
+                     {/*map products in the row as images */}
+                    {row.map ( url => <Image className="Photo-Images" key={index} src={url}/>)}
+                </Col>
+            ));
 
-            const path = this.state.fileURL.length;
-            let images;
-            let imgURL = [];
+            //console.log(imgURL);
 
-            this.state.fileURL.forEach((url, index) => {
-                if ((index + 1) % 5 === 0) {
-                    imgURL.push(<Col className="Image-container"><Image className="Photo-Images" key={index} src={url}/>
-                    </Col>)
+            /*this.state.fileURL.forEach((url, index) => {
+                if ((index+1) % 4 === 0) {
+                    imgURL.push(<Col className="Image-container"><Image className="Photo-Images" key={index} src={url}/></Col>)
                 }
                 else {
                     imgURL.push(<Image className="Photo-Images" key={index} src={url}/>)
                 }
-            });
+            });*/
 
                 /*images = <div>{this.state.fileURL.map((url,index) => (
                     <Image className="Photo-Images" key={index} src={url} />
@@ -94,20 +104,22 @@ class Photography extends Component {
                     return (
                         <div className="Photography-wrap">
                             <Container className="Photography">
-                                <Row>
-                                    <Col>
+                                <Row className="Title-row">
+                                    <Col className="Title-col">
+                                        <div>
+                                            <drawerToggleButton />
+                                        </div>
                                         <h1 className="Title">Photography</h1>
                                     </Col>
                                 </Row>
-                                <Row>
-                                    <Col lg={1} className="Sidebar-area">
+                                <Row className="Image-and-sidebar">
+                                    <Col className="Sidebar-area" style={{ paddingLeft: 0, paddingRight: 0 }}>
                                         <Sidebar choice={this.state.option} action={this.childHandler}/>
                                     </Col>
                                     {imgURL}
                                 </Row>
                             </Container>
                         </div>
-
                     );
             }
 }
