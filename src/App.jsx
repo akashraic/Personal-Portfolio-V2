@@ -7,7 +7,7 @@ import Routes from "./Component/Routes";
 class App extends Component {
     render() {
         return (
-            <div className="main">
+            <div className="main" style={{height: '100%'}}>
                 <Home/>
 
                 {/*<Photo/>*/}

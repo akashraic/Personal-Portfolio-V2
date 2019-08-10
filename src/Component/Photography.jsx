@@ -3,7 +3,10 @@ import {Container, Row, Col, Image} from 'react-bootstrap';
 import './Main_content.css';
 import Sidebar from "./Sidebar";
 import * as firebase from 'firebase'
+import DrawerToggleButton from './SideDrawer/DrawerToggleButton';
+import Backdrop from './Backdrop/Backdrop';
 import Lightbox from 'react-lightbox-component';
+import Toolbar from "./SideDrawer/Toolbar";
 /*
 import '@firebase/firestore';
 import '@firebase/auth';
@@ -20,7 +23,8 @@ class Photography extends Component {
                 fileURL: [],
                 //Default parent state
                 fire_path: "",
-                bool: true
+                bool: true,
+                sideDrawerOpen: false
             };
 
             console.log(this.state.option);
@@ -28,6 +32,12 @@ class Photography extends Component {
 
             this.childHandler = this.childHandler.bind(this);
         }
+
+        drawerToggleClickHandler =() => {
+            this.setState((prevState) => {
+                return{sideDrawerOpen: !prevState.sideDrawerOpen}
+            });
+        };
 
         childHandler(dataFromChild) {
             // log our state before and after we updated it
@@ -86,6 +96,14 @@ class Photography extends Component {
                 </Col>
             ));
 
+            let sidebar;
+            let backdrop;
+
+            if(this.state.sideDrawerOpen) {
+                sidebar = <Sidebar choice={this.state.option} action={this.childHandler}/>;
+                backdrop = <Backdrop/>
+            }
+
             //console.log(imgURL);
 
             /*this.state.fileURL.forEach((url, index) => {
@@ -103,18 +121,17 @@ class Photography extends Component {
 
                     return (
                         <div className="Photography-wrap">
+                            <div><Toolbar drawerClickHandler={this.drawerToggleClickHandler}/></div>
                             <Container className="Photography">
                                 <Row className="Title-row">
                                     <Col className="Title-col">
-                                        <div>
-                                            <drawerToggleButton />
-                                        </div>
                                         <h1 className="Title">Photography</h1>
                                     </Col>
                                 </Row>
                                 <Row className="Image-and-sidebar">
-                                    <Col className="Sidebar-area" style={{ paddingLeft: 0, paddingRight: 0 }}>
-                                        <Sidebar choice={this.state.option} action={this.childHandler}/>
+                                    <Col className="Sidebar-area">
+                                        {sidebar}
+                                        {backdrop}
                                     </Col>
                                     {imgURL}
                                 </Row>
