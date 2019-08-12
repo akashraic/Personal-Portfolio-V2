@@ -5,6 +5,7 @@ import Home from './Home.jsx';
 import {Route} from "react-router";
 import Photography from "./Photography";
 import Options from "./Options";
+import CloseDrawerButton from "./SideDrawer/CloseDrawerButton";
 
 // Each logical "route" has two components, one for
 // the sidebar and one for the main area. We want to
@@ -121,13 +122,15 @@ class Sidebar extends Component {
             console.log(this.props.action);
         }
 
-
     render() {
+            let drawerClasses = 'Sidebar';
+            if(this.props.show) {
+                drawerClasses = 'Sidebar open';
+            }
         return (
-                <div className="Sidebar">
-                    {/*<div><Link to="/">Akash Rai</Link></div>*/}
+                <div className={drawerClasses}>
+                    <div><CloseDrawerButton close={this.props.hide}/></div>
                     <ul className="nav-list">
-                        {/*<a href="javascript:void(0)" className="close" onClick={this.closeSM}></a>*/}
                         <div className="sm-wrapper">
                         {routes.filter(routes => routes.option === this.props.choice).map((route, index) => (
                         <li className="list">

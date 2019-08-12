@@ -3,7 +3,6 @@ import {Container, Row, Col, Image} from 'react-bootstrap';
 import './Main_content.css';
 import Sidebar from "./Sidebar";
 import * as firebase from 'firebase'
-import DrawerToggleButton from './SideDrawer/DrawerToggleButton';
 import Backdrop from './Backdrop/Backdrop';
 import Lightbox from 'react-lightbox-component';
 import Toolbar from "./SideDrawer/Toolbar";
@@ -33,10 +32,14 @@ class Photography extends Component {
             this.childHandler = this.childHandler.bind(this);
         }
 
-        drawerToggleClickHandler =() => {
+        drawerToggleClickHandler = () => {
             this.setState((prevState) => {
                 return{sideDrawerOpen: !prevState.sideDrawerOpen}
             });
+        };
+
+        backdropClickHandler = () => {
+            this.setState({sideDrawerOpen: false});
         };
 
         childHandler(dataFromChild) {
@@ -96,12 +99,11 @@ class Photography extends Component {
                 </Col>
             ));
 
-            let sidebar;
             let backdrop;
 
             if(this.state.sideDrawerOpen) {
-                sidebar = <Sidebar choice={this.state.option} action={this.childHandler}/>;
-                backdrop = <Backdrop/>
+
+                backdrop = <Backdrop click={this.backdropClickHandler}/>;
             }
 
             //console.log(imgURL);
@@ -121,7 +123,7 @@ class Photography extends Component {
 
                     return (
                         <div className="Photography-wrap">
-                            <div><Toolbar drawerClickHandler={this.drawerToggleClickHandler}/></div>
+                            <Toolbar drawerClick={this.drawerToggleClickHandler}/>
                             <Container className="Photography">
                                 <Row className="Title-row">
                                     <Col className="Title-col">
@@ -130,7 +132,7 @@ class Photography extends Component {
                                 </Row>
                                 <Row className="Image-and-sidebar">
                                     <Col className="Sidebar-area">
-                                        {sidebar}
+                                        <Sidebar choice={this.state.option} action={this.childHandler} show={this.state.sideDrawerOpen} hide={this.drawerToggleClickHandler}/>;
                                         {backdrop}
                                     </Col>
                                     {imgURL}
