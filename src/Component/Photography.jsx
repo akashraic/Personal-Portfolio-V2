@@ -124,20 +124,19 @@ class Photography extends Component {
                     return (
                         <div className="Photography-wrap">
                             <Toolbar drawerClick={this.drawerToggleClickHandler}/>
-                            <Container className="Photography">
-                                <Row className="Title-row">
+   {/*                             <Row className="Title-row">
                                     <Col className="Title-col">
                                         <h1 className="Title">Photography</h1>
                                     </Col>
-                                </Row>
+                                </Row>*/}
                                 <Row className="Image-and-sidebar">
                                     <Col className="Sidebar-area">
                                         <Sidebar choice={this.state.option} action={this.childHandler} show={this.state.sideDrawerOpen} hide={this.drawerToggleClickHandler}/>;
                                         {backdrop}
                                     </Col>
-                                    {imgURL}
+                                    <div className="Images">{imgURL}</div>
                                 </Row>
-                            </Container>
+
                         </div>
                     );
             }

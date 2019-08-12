@@ -16,8 +16,13 @@
     outline:none;
 }
 
-.Toggle-btn-line{
+.Toggle-btn-line {
     width:30px;
     height:2px;
     background: #2a2c2f;
+}
+
+.Toggle-btn-line:hover {
+    background: green;
+    transition: 0.3s ease-in;
 }

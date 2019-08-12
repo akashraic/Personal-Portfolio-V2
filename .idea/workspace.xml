@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7970149a-0454-43b0-81f9-fc7c6d146cf7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Component/SideDrawer/CloseDrawerButton.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/SideDrawer/Toolbar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Backdrop/Backdrop.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Backdrop/Backdrop.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Main_content.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Main_content.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Photography.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Photography.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/SideDrawer/CloseDrawerButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/SideDrawer/CloseDrawerButton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/SideDrawer/CloseDrawerButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/SideDrawer/CloseDrawerButton.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/SideDrawer/DrawerToggleButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/SideDrawer/DrawerToggleButton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/SideDrawer/Toolbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/SideDrawer/Toolbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/SideDrawer/toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/SideDrawer/CloseDrawerButton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/SideDrawer/DrawerToggleButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/SideDrawer/DrawerToggleButton.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Sidebar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Sidebar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,14 +23,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5770393">
+    <splitter split-orientation="horizontal" split-proportion="0.5287009">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Sidebar.jsx" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Sidebar.jsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Component/Sidebar.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="131" column="24" selection-start-line="131" selection-start-column="24" selection-end-line="131" selection-end-column="24" />
+                <state relative-caret-position="306">
+                  <caret line="137" column="29" selection-start-line="137" selection-start-column="29" selection-end-line="137" selection-end-column="29" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -63,35 +62,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="CloseDrawerButton.jsx" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Component/SideDrawer/CloseDrawerButton.jsx">
+          <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/index.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="CloseDrawerButton.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Component/SideDrawer/CloseDrawerButton.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DrawerToggleButton.jsx" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Component/SideDrawer/DrawerToggleButton.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="221">
+                  <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -99,8 +74,8 @@
           <file leaf-file-name="Photography.jsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Component/Photography.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="406">
-                  <caret line="134" column="171" selection-start-line="134" selection-start-column="171" selection-end-line="134" selection-end-column="171" />
+                <state relative-caret-position="358">
+                  <caret line="135" column="42" lean-forward="true" selection-start-line="135" selection-start-column="42" selection-end-line="135" selection-end-column="42" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -108,23 +83,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Toolbar.jsx" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Toolbar.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Component/SideDrawer/Toolbar.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+                <state relative-caret-position="119">
+                  <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DrawerToggleButton.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Component/SideDrawer/DrawerToggleButton.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
                 </state>
               </provider>
             </entry>
@@ -133,20 +99,29 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Main_content.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Component/Main_content.css">
+          <file leaf-file-name="DrawerToggleButton.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Component/SideDrawer/DrawerToggleButton.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="357">
-                  <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+                  <caret line="21" selection-start-line="21" selection-end-line="21" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Sidebar.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Main_content.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Component/Main_content.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="476">
+                  <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Sidebar.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Component/Sidebar.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+                <state relative-caret-position="459">
+                  <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
                 </state>
               </provider>
             </entry>
@@ -156,6 +131,15 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="442">
                   <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Toolbar.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Component/SideDrawer/Toolbar.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="17">
+                  <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -200,23 +184,23 @@
         <option value="$PROJECT_DIR$/src/Component/Home.jsx" />
         <option value="$PROJECT_DIR$/src/Component/Options.jsx" />
         <option value="$PROJECT_DIR$/src/Component/Options.css" />
-        <option value="$PROJECT_DIR$/src/Component/Main_content.css" />
         <option value="$PROJECT_DIR$/src/Component/SideDrawer/drawerToggleButton.jsx" />
         <option value="$PROJECT_DIR$/src/Component/SideDrawer/drawerToggleButton.css" />
         <option value="$PROJECT_DIR$/src/App.jsx" />
-        <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/Component/Backdrop/Backdrop.css" />
         <option value="$PROJECT_DIR$/src/Component/SideDrawer/toolbar.css" />
-        <option value="$PROJECT_DIR$/src/Component/SideDrawer/Toolbar.css" />
-        <option value="$PROJECT_DIR$/src/Component/SideDrawer/DrawerToggleButton.jsx" />
-        <option value="$PROJECT_DIR$/src/Component/SideDrawer/Toolbar.jsx" />
         <option value="$PROJECT_DIR$/src/Component/Backdrop/Backdrop.jsx" />
-        <option value="$PROJECT_DIR$/src/Component/Sidebar.css" />
-        <option value="$PROJECT_DIR$/src/Component/SideDrawer/DrawerToggleButton.css" />
-        <option value="$PROJECT_DIR$/src/Component/SideDrawer/CloseDrawerButton.css" />
-        <option value="$PROJECT_DIR$/src/Component/Photography.jsx" />
         <option value="$PROJECT_DIR$/src/Component/SideDrawer/CloseDrawerButton.jsx" />
+        <option value="$PROJECT_DIR$/src/Component/SideDrawer/CloseDrawerButton.css" />
+        <option value="$PROJECT_DIR$/src/Component/SideDrawer/DrawerToggleButton.jsx" />
         <option value="$PROJECT_DIR$/src/Component/Sidebar.jsx" />
+        <option value="$PROJECT_DIR$/src/Component/SideDrawer/DrawerToggleButton.css" />
+        <option value="$PROJECT_DIR$/src/Component/Sidebar.css" />
+        <option value="$PROJECT_DIR$/src/index.css" />
+        <option value="$PROJECT_DIR$/src/Component/Photography.jsx" />
+        <option value="$PROJECT_DIR$/src/Component/SideDrawer/Toolbar.css" />
+        <option value="$PROJECT_DIR$/src/Component/SideDrawer/Toolbar.jsx" />
+        <option value="$PROJECT_DIR$/src/Component/Main_content.css" />
       </list>
     </option>
   </component>
@@ -350,12 +334,12 @@
       <workItem from="1564095900190" duration="73103000" />
       <workItem from="1565197921165" duration="33861000" />
       <workItem from="1565364710271" duration="14999000" />
-      <workItem from="1565462198119" duration="6493000" />
+      <workItem from="1565462198119" duration="12357000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211207000" />
+    <option name="totallyTimeSpent" value="217071000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -576,13 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/Main_content.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Component/Home.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -630,13 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Component/Options.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -647,41 +617,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/Sidebar.css">
+    <entry file="file://$PROJECT_DIR$/src/Component/SideDrawer/CloseDrawerButton.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        <state relative-caret-position="374">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/SideDrawer/Toolbar.css">
+    <entry file="file://$PROJECT_DIR$/src/Component/SideDrawer/CloseDrawerButton.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/SideDrawer/DrawerToggleButton.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/Photography.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="134" column="171" selection-start-line="134" selection-start-column="171" selection-end-line="134" selection-end-column="171" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/SideDrawer/Toolbar.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="119">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -690,8 +636,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Component/SideDrawer/DrawerToggleButton.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        <state relative-caret-position="119">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -708,30 +654,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/SideDrawer/CloseDrawerButton.jsx">
+    <entry file="file://$PROJECT_DIR$/src/Component/SideDrawer/DrawerToggleButton.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/Sidebar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/Sidebar.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="137" column="29" selection-start-line="137" selection-start-column="29" selection-end-line="137" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/Photography.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="135" column="42" lean-forward="true" selection-start-line="135" selection-start-column="42" selection-end-line="135" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/SideDrawer/Toolbar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/SideDrawer/Toolbar.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/SideDrawer/CloseDrawerButton.css">
+    <entry file="file://$PROJECT_DIR$/src/Component/Main_content.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/Sidebar.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="131" column="24" selection-start-line="131" selection-start-column="24" selection-end-line="131" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="476">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
         </state>
       </provider>
     </entry>

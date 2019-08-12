@@ -20,7 +20,16 @@
 }
 
 .Close-btn-line{
+    opacity: 0.5;
     width: 30px;
     height:2px;
     background: #F5F5F5;
+}
+
+.btn1 {
+    transform: translateY(12px) rotate(45deg);
+}
+
+.btn2 {
+    transform: rotate(-45deg);
 }
