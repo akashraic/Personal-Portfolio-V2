@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@firebase/storage": "^0.3.8",
+    "@fortawesome/fontawesome-svg-core": "^1.2.21",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "@google-cloud/storage": "^3.0.4",
     "@trendmicro/react-sidenav": "^0.4.5",
     "aws-amplify-react": "^2.3.12",

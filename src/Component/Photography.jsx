@@ -6,6 +6,7 @@ import * as firebase from 'firebase'
 import Backdrop from './Backdrop/Backdrop';
 import Lightbox from 'react-lightbox-component';
 import Toolbar from "./SideDrawer/Toolbar";
+import ModalGallery from "./Modal/ModalGallery";
 /*
 import '@firebase/firestore';
 import '@firebase/auth';
@@ -23,19 +24,34 @@ class Photography extends Component {
                 //Default parent state
                 fire_path: "",
                 bool: true,
-                sideDrawerOpen: false
+                sideDrawerOpen: false,
+                showModal: false,
+                photoID: 0
             };
 
+            console.log("Photo ID" + this.state.photoID);
             console.log(this.state.option);
             console.log(this.state.fire_path);
 
             this.childHandler = this.childHandler.bind(this);
         }
 
+        toggleModal = (number) => {
+            this.setState((prevState) => {
+                return{
+                    showModal: !prevState.showModal,
+                    photoID: number,
+                }
+            });
+        };
+
+
+
         drawerToggleClickHandler = () => {
             this.setState((prevState) => {
                 return{sideDrawerOpen: !prevState.sideDrawerOpen}
             });
+
         };
 
         backdropClickHandler = () => {
@@ -45,7 +61,7 @@ class Photography extends Component {
         childHandler(dataFromChild) {
             // log our state before and after we updated it
             this.state.bool = true;
-            console.log('%cPrevious Parent State: ' + JSON.stringify(this.state), "color:orange");
+            // console.log('%cPrevious Parent State: ' + JSON.stringify(this.state), "color:orange");
             this.setState({
                 fire_path: dataFromChild,
                 fileURL: []
@@ -90,14 +106,17 @@ class Photography extends Component {
             // array of N elements, where N is the number of rows needed
             const rows = [...Array(Math.ceil(path/4))];
             // chunk the products into the array of rows
-            const imgRows = rows.map((row, index) => this.state.fileURL.slice(index * 4, index * 4 + 4) );
+            const imgRows = rows.map((row, num) => this.state.fileURL.slice(num * 4, num * 4 + 4) );
             // Map the rows as div.row
             const imgURL = imgRows.map((row, index) => (
                 <Col className="Image-container" >
                      {/*map products in the row as images */}
-                    {row.map ( url => <Image className="Photo-Images" key={index} src={url}/>)}
+                    {row.map ( url => <Image className="Photo-Images" key={index} src={url} onClick={() => this.toggleModal(index)} />)}
                 </Col>
             ));
+
+            console.log(this.state.fileURL);
+            console.log("Photo ID" + this.state.photoID);
 
             let backdrop;
 
@@ -122,6 +141,7 @@ class Photography extends Component {
                 ))}</div>*/
 
                     return (
+
                         <div className="Photography-wrap">
                             <Toolbar drawerClick={this.drawerToggleClickHandler}/>
    {/*                             <Row className="Title-row">
@@ -136,6 +156,8 @@ class Photography extends Component {
                                     </Col>
                                     <div className="Images">{imgURL}</div>
                                 </Row>
+
+                            <ModalGallery isOpen={this.state.showModal} src={this.state.fileURL[this.state.photoID]} hide={this.toggleModal}/>
 
                         </div>
                     );
