@@ -8,6 +8,19 @@
     background: rgba(21,21,21,.75);
 }
 
+.Modal-body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 11;
+    padding: 0;
+    overflow: auto;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius:4px;
+    transform: translate(-50%, -50%);
+}
+
 .close {
     top: 0;
     right:0;

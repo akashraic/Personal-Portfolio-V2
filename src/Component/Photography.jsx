@@ -7,6 +7,8 @@ import Backdrop from './Backdrop/Backdrop';
 import Lightbox from 'react-lightbox-component';
 import Toolbar from "./SideDrawer/Toolbar";
 import ModalGallery from "./Modal/ModalGallery";
+import shortid from 'shortid';
+
 /*
 import '@firebase/firestore';
 import '@firebase/auth';
@@ -26,7 +28,7 @@ class Photography extends Component {
                 bool: true,
                 sideDrawerOpen: false,
                 showModal: false,
-                photoID: 0
+                photoID: -1
             };
 
             console.log("Photo ID" + this.state.photoID);
@@ -45,13 +47,10 @@ class Photography extends Component {
             });
         };
 
-
-
         drawerToggleClickHandler = () => {
             this.setState((prevState) => {
                 return{sideDrawerOpen: !prevState.sideDrawerOpen}
             });
-
         };
 
         backdropClickHandler = () => {
@@ -103,15 +102,19 @@ class Photography extends Component {
 
     render() {
             let path = this.state.fileURL.length;
-            // array of N elements, where N is the number of rows needed
-            const rows = [...Array(Math.ceil(path/4))];
-            // chunk the products into the array of rows
-            const imgRows = rows.map((row, num) => this.state.fileURL.slice(num * 4, num * 4 + 4) );
+            // array of N elements, where N is the number of columns needed
+            const cols = [...Array(Math.ceil(path/4))];
+            // chunk the products into the array of columns
+            const imgCols = cols.map((col, num) => this.state.fileURL.slice(num * 4, num * 4 + 4) );
+            let photoNum =  Array.from(Array(path).keys());
+            console.log(photoNum);
+            console.log(this.state.photoID);
+            // if (colNum>0){ photoNum += 4}
             // Map the rows as div.row
-            const imgURL = imgRows.map((row, index) => (
-                <Col className="Image-container" >
+            const imgURL = imgCols.map((col, num) => (
+                <Col className="Image-container" key={num}>
                      {/*map products in the row as images */}
-                    {row.map ( url => <Image className="Photo-Images" key={index} src={url} onClick={() => this.toggleModal(index)} />)}
+                    {col.map( (url, index) => <Image className="Photo-Images" key={photoNum[index+(4*num)]} src={url} onClick={() => this.toggleModal(photoNum[index+(4*num)])} />)}
                 </Col>
             ));
 
@@ -121,47 +124,43 @@ class Photography extends Component {
             let backdrop;
 
             if(this.state.sideDrawerOpen) {
-
                 backdrop = <Backdrop click={this.backdropClickHandler}/>;
             }
+                return (
+                    <div className="Photography-wrap">
+                        <Toolbar drawerClick={this.drawerToggleClickHandler}/>
+                        <Row className="Image-and-sidebar">
+                            <Col className="Sidebar-area">
+                                <Sidebar choice={this.state.option} action={this.childHandler} show={this.state.sideDrawerOpen} hide={this.drawerToggleClickHandler}/>;
+                                {backdrop}
+                            </Col>
+                            <div className="Images">{imgURL}</div>
+                        </Row>
+                        <ModalGallery isOpen={this.state.showModal} src={this.state.fileURL[this.state.photoID]} hide={this.toggleModal}/>
+                    </div>
+                );
+        }
+}
 
-            //console.log(imgURL);
+export default Photography;
 
-            /*this.state.fileURL.forEach((url, index) => {
-                if ((index+1) % 4 === 0) {
-                    imgURL.push(<Col className="Image-container"><Image className="Photo-Images" key={index} src={url}/></Col>)
-                }
-                else {
-                    imgURL.push(<Image className="Photo-Images" key={index} src={url}/>)
-                }
-            });*/
+//console.log(imgURL);
 
-                /*images = <div>{this.state.fileURL.map((url,index) => (
-                    <Image className="Photo-Images" key={index} src={url} />
-                ))}</div>*/
+/*this.state.fileURL.forEach((url, index) => {
+    if ((index+1) % 4 === 0) {
+        imgURL.push(<Col className="Image-container"><Image className="Photo-Images" key={index} src={url}/></Col>)
+    }
+    else {
+        imgURL.push(<Image className="Photo-Images" key={index} src={url}/>)
+    }
+});*/
 
-                    return (
+/*images = <div>{this.state.fileURL.map((url,index) => (
+    <Image className="Photo-Images" key={index} src={url} />
+))}</div>*/
 
-                        <div className="Photography-wrap">
-                            <Toolbar drawerClick={this.drawerToggleClickHandler}/>
-   {/*                             <Row className="Title-row">
+{/*                             <Row className="Title-row">
                                     <Col className="Title-col">
                                         <h1 className="Title">Photography</h1>
                                     </Col>
                                 </Row>*/}
-                                <Row className="Image-and-sidebar">
-                                    <Col className="Sidebar-area">
-                                        <Sidebar choice={this.state.option} action={this.childHandler} show={this.state.sideDrawerOpen} hide={this.drawerToggleClickHandler}/>;
-                                        {backdrop}
-                                    </Col>
-                                    <div className="Images">{imgURL}</div>
-                                </Row>
-
-                            <ModalGallery isOpen={this.state.showModal} src={this.state.fileURL[this.state.photoID]} hide={this.toggleModal}/>
-
-                        </div>
-                    );
-            }
-}
-
-export default Photography;
