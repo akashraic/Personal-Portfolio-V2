@@ -1,0 +1,51 @@
+.right {
+    position: fixed;
+    top: 50%;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    width: 36px;
+    background: transparent;
+    border: none;
+    padding: 0;
+
+}
+
+.left {
+    position: fixed;
+    top: 50%;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    width: 36px;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.Arrow-line {
+    opacity: 0.5;
+    width: 30px;
+    height:2px;
+    background: #F5F5F5;
+}
+
+.right .a1{
+    transform: rotate(22.5deg);
+}
+
+.right .a2 {
+    transform: rotate(-22.5deg);
+}
+
+.left .a1{
+    transform: rotate(-22.5deg);
+}
+
+.left .a2 {
+    transform: rotate(22.5deg);
+}

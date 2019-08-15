@@ -14,7 +14,8 @@ const Toolbar = props => (
             <div className="Toolbar-navs">
                 <ul className="Toolbar-nav-list">
                     <li className="Toolbar-nav-items"><Link clasName="Toolbar-links" to="/Photography">Photography</Link></li>
-                    <li className="Toolbar-nav-items"><Link clasName="Toolbar-links" to="/Photography">Photography</Link></li>
+                    <li className="Toolbar-nav-items"><Link clasName="Toolbar-links" to="/Programming">Programming</Link></li>
+                    <li className="Toolbar-nav-items"><Link clasName="Toolbar-links" to="/Projects">Project Management</Link></li>
                 </ul>
             </div>
         </nav>
