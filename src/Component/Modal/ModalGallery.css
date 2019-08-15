@@ -19,9 +19,30 @@
     max-height: 80%;
     border-radius:4px;
     transform: translate(-50%, -50%);
+
+}
+
+.Modal-image {
+    transition: 0.3s ease-in;
 }
 
 .close {
     top: 0;
     right:0;
 }
+
+.Image-num {
+    color: whitesmoke;
+    position: fixed;
+    bottom: 0;
+    right: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size:2.5rem;
+}
+
+.dialog-enter {
+    opacity: 0.01;
+    transform: scale(1.1);
+}
+

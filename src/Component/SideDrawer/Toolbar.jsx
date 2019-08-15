@@ -9,11 +9,11 @@ const Toolbar = props => (
             <div>
                 <DrawerToggleButton click={props.drawerClick}/>
             </div>
-            <div className="Toolbar-logo"><Link to="/">Akash Rai</Link></div>
+            <div className="Toolbar-logo"><Link to="/Photography" onClick={() => props.path("Photo Gallery/Best")}>Akash Rai</Link></div>
             <div className="spacer"/>
             <div className="Toolbar-navs">
                 <ul className="Toolbar-nav-list">
-                    <li className="Toolbar-nav-items"><Link clasName="Toolbar-links" to="/Photography">Photography</Link></li>
+                    <li className="Toolbar-nav-items"><Link clasName="Toolbar-links" to="/Photography" onClick={() => props.path("Photo Gallery/Best")}>Photography</Link></li>
                     <li className="Toolbar-nav-items"><Link clasName="Toolbar-links" to="/Programming">Programming</Link></li>
                     <li className="Toolbar-nav-items"><Link clasName="Toolbar-links" to="/Projects">Project Management</Link></li>
                 </ul>

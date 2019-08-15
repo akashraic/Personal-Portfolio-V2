@@ -34,6 +34,10 @@
     background: #F5F5F5;
 }
 
+.Arrow-line:focus {
+    outline: none;
+}
+
 .right .a1{
     transform: rotate(22.5deg);
 }

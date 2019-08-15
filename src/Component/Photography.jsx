@@ -36,7 +36,29 @@ class Photography extends Component {
             console.log(this.state.fire_path);
 
             this.childHandler = this.childHandler.bind(this);
+            this.previousSlide = this.previousSlide.bind(this);
+            this.nextSlide = this.nextSlide.bind(this);
         }
+
+        previousSlide () {
+            let lastIndex = this.state.fileURL.length - 1;
+            let shouldResetIndex = this.state.photoID === 0;
+            let index =  shouldResetIndex ? lastIndex : this.state.photoID - 1;
+
+            this.setState({
+                photoID: index
+            });
+        };
+
+        nextSlide () {
+            let lastIndex = this.state.fileURL.length - 1;
+            let shouldResetIndex = this.state.photoID === lastIndex;
+            let index =  shouldResetIndex ? 0 : this.state.photoID + 1;
+
+            this.setState({
+                photoID: index
+            });
+        };
 
         toggleModal = (number) => {
             this.setState((prevState) => {
@@ -55,6 +77,10 @@ class Photography extends Component {
 
         backdropClickHandler = () => {
             this.setState({sideDrawerOpen: false});
+        };
+
+        defaultPath = (data) => {
+            this.setState({fire_path: data})
         };
 
         childHandler(dataFromChild) {
@@ -128,15 +154,28 @@ class Photography extends Component {
             }
                 return (
                     <div className="Photography-wrap">
-                        <Toolbar drawerClick={this.drawerToggleClickHandler}/>
+                        <Toolbar
+                            drawerClick={this.drawerToggleClickHandler}
+                            path={this.childHandler}/>
                         <Row className="Image-and-sidebar">
                             <Col className="Sidebar-area">
-                                <Sidebar choice={this.state.option} action={this.childHandler} show={this.state.sideDrawerOpen} hide={this.drawerToggleClickHandler}/>;
+                                <Sidebar
+                                    choice={this.state.option}
+                                    action={this.childHandler}
+                                    show={this.state.sideDrawerOpen}
+                                    hide={this.drawerToggleClickHandler} />
                                 {backdrop}
                             </Col>
                             <div className="Images">{imgURL}</div>
                         </Row>
-                        <ModalGallery isOpen={this.state.showModal} src={this.state.fileURL[this.state.photoID]} hide={this.toggleModal}/>
+                        <ModalGallery
+                            isOpen={this.state.showModal}
+                            src={this.state.fileURL[this.state.photoID]}
+                            hide={this.toggleModal}
+                            next={this.nextSlide}
+                            previous={this.previousSlide}
+                            index={this.state.photoID}
+                            max={this.state.fileURL.length-1}/>
                     </div>
                 );
         }
