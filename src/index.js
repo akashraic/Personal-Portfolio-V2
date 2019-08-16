@@ -4,9 +4,6 @@ import './index.css';
 import App from './App.jsx';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
-import config from './aws-exports';
-import awsExports from './aws-exports';
-// import { withAuthenticator } from 'aws-amplify-react';
 import * as firebase from 'firebase';
 
 // Your web app's Firebase configuration

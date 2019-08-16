@@ -1,8 +1,14 @@
 import React, {Component} from 'react';
 import Home from './Component/Home.jsx'
 import './App.css';
-import Photo from './Component/Photography.jsx'
-import Routes from "./Component/Routes";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import {faInstagram} from "@fortawesome/free-brands-svg-icons/faInstagram";
+import {faFilePdf} from "@fortawesome/free-solid-svg-icons/faFilePdf";
+import {faLinkedin} from "@fortawesome/free-brands-svg-icons/faLinkedin";
+import {faGithubSquare} from "@fortawesome/free-brands-svg-icons/faGithubSquare";
+
+library.add(fab, faGithubSquare, faLinkedin, faFilePdf, faInstagram);
 
 class App extends Component {
     render() {

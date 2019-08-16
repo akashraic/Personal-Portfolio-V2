@@ -79,10 +79,6 @@ class Photography extends Component {
             this.setState({sideDrawerOpen: false});
         };
 
-        defaultPath = (data) => {
-            this.setState({fire_path: data})
-        };
-
         childHandler(dataFromChild) {
             // log our state before and after we updated it
             this.state.bool = true;

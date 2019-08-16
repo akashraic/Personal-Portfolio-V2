@@ -6,6 +6,13 @@ import {Route} from "react-router";
 import Photography from "./Photography";
 import Options from "./Options";
 import CloseDrawerButton from "./SideDrawer/CloseDrawerButton";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome/index.es";
+import {faInstagram} from "@fortawesome/free-brands-svg-icons/faInstagram";
+import {faFilePdf} from "@fortawesome/free-solid-svg-icons/faFilePdf";
+import {faLinkedin} from "@fortawesome/free-brands-svg-icons/faLinkedin";
+import {faGithubSquare} from "@fortawesome/free-brands-svg-icons/faGithubSquare";
+import Pdf from "../../src/pdf/Akash_Rai_Chhabria_2019_01_13.pdf";
+
 
 // Each logical "route" has two components, one for
 // the sidebar and one for the main area. We want to
@@ -139,7 +146,12 @@ class Sidebar extends Component {
                         ))}
                         </div>
 
+                        <div className="spacer"/>
+
                         <div className="Info-wrapper">
+                            <li className="Lower-list">
+                                <Link to="/Pricing" className="list-anchor">Pricing</Link>
+                            </li>
                             <li className="Lower-list">
                                 <Link to="/About" className="list-anchor">About</Link>
                             </li>
@@ -149,6 +161,18 @@ class Sidebar extends Component {
                         </div>
 
                         <div className="Social-wrapper">
+                            <li className="Social-list">
+                                <a href={Pdf} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="far fa-file-pdf" icon={faFilePdf} /></a>
+                            </li>
+                            <li className="Social-list">
+                                <a href={"https://www.instagram.com/akashrai_10/"} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="instant fa-fw" icon={faInstagram} /></a>
+                            </li>
+                            <li className="Social-list">
+                                <a href={"https://www.linkedin.com/in/akash-chhabria/"} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="fab fa-linkedin" icon={faLinkedin}/></a>
+                            </li>
+                            <li className="Social-list">
+                                <a href={"https://github.com/muztank10/"} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="fab fa-github-square" icon={faGithubSquare}/></a>
+                            </li>
                         </div>
                     </ul>
 
