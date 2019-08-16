@@ -19,6 +19,9 @@ class Routes extends Component {
                     <Route exact path='/Photography' component={Photography}/>
                     <Route exact path='/Programming' component={Programming}/>
                     <Route exact path='/Projects' component={Projects}/>
+                    {/*<Route exact path='/About' component={About}/>*/}
+                    {/*<Route exact path='/Contact' component={Contact}/>*/}
+                    {/*<Route exact path='/Pricing' component={Pricing}/>*/}
                 </Switch>
 
             </div>

@@ -138,6 +138,18 @@ class Sidebar extends Component {
                         </li>
                         ))}
                         </div>
+
+                        <div className="Info-wrapper">
+                            <li className="Lower-list">
+                                <Link to="/About" className="list-anchor">About</Link>
+                            </li>
+                            <li className="Lower-list">
+                                <Link to="/Contact" className="list-anchor">Contact</Link>
+                            </li>
+                        </div>
+
+                        <div className="Social-wrapper">
+                        </div>
                     </ul>
 
                     {routes.map((route, index) => (

@@ -10,13 +10,12 @@
     background: transparent;
     border: none;
     padding: 0;
-
 }
 
 .left {
     position: fixed;
     top: 50%;
-    left: 1rem;
+    left: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

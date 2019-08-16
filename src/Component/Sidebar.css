@@ -8,7 +8,7 @@
     box-shadow: 1px 0 7px rgba(0,0,0,0.5);
     position:fixed;
     top: 0;
-    left: 0;
+    left: 1px;
     width:70%;
     max-width: 250px;
     z-index:200;
@@ -18,6 +18,11 @@
 
 .nav-list{
     padding:0.5rem;
+}
+
+.sm-wrapper {
+    /*display: flex;*/
+    margin-bottom: 300px;
 }
 
 .Sidebar.open {
@@ -40,6 +45,20 @@
     padding: 1rem 1rem;
     cursor: pointer;
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.Lower-list {
+    list-style: none;
+    width:100%;
+    color: #fff;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.Lower-list .list-anchor:hover {
+    color: #9a9a9a;
+    transition: 0.3s;
 }
 
 .Sidebar .list-anchor {
