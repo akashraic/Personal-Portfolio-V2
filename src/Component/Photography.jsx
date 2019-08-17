@@ -2,18 +2,10 @@ import React, {Component} from 'react';
 import {Container, Row, Col, Image} from 'react-bootstrap';
 import './Main_content.css';
 import Sidebar from "./Sidebar";
-import * as firebase from 'firebase'
+import * as firebase from 'firebase';
 import Backdrop from './Backdrop/Backdrop';
-import Lightbox from 'react-lightbox-component';
 import Toolbar from "./SideDrawer/Toolbar";
 import ModalGallery from "./Modal/ModalGallery";
-import shortid from 'shortid';
-
-/*
-import '@firebase/firestore';
-import '@firebase/auth';
-import '@firebase/storage';
-*/
 
 class Photography extends Component {
 

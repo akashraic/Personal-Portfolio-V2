@@ -76,20 +76,30 @@ const routes = [
         main: () => <Options/>
     },
     {   label: "Holisitc Bodies",
-        path: "/Photography",
+        path: "/Programming",
         option: "Prog",
+        fire_path: "Programming/Holistic.png",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
     },
     {   label: "Gifting Guru",
-        path: "/Photography",
+        path: "/Programming",
         option: "Prog",
+        fire_path: "Programming/Gifting.png",
+        // sidebar: () => <div>shoelaces!</div>,
+        main: () => <Options/>
+    },
+    {   label: "Drone and City Simulator",
+        path: "/Programming",
+        option: "Prog",
+        fire_path: "Programming/Drone.png",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
     },
     {   label: "Battle of the Bands",
-        path: "/Photography",
+        path: "/Programming",
         option: "Prog",
+        fire_path: "Programming/BOTB.png",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
     },
