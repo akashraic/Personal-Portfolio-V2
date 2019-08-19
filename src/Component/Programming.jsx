@@ -16,6 +16,7 @@ class Programming extends Component {
             fire_path: ' ',
             pic: ' ',
             bool: true,
+            desc: ""
         };
 
         this.childHandler = this.childHandler.bind(this);
@@ -39,10 +40,17 @@ class Programming extends Component {
         },() => console.log('Updated Parent State:', this.state));
     }
 
-    componentDidMount() {
-        this.setState({fire_path: "Programming/BOTB.png"},function () {
-            console.log(this.state.fire_path);
+    descriptionUpdater = (description) => {
+        this.setState({
+            desc: description,
         });
+        console.log(this.state.desc)
+    };
+
+    componentDidMount() {
+        /*this.setState({fire_path: "Base"},function () {
+            console.log(this.state.fire_path);
+        });*/
     }
 
     componentDidUpdate() {
@@ -64,23 +72,47 @@ class Programming extends Component {
 
     render() {
 
-        console.log(this.state.pic);
-
         let backdrop;
-
-        if(this.state.sideDrawerOpen) {
-            backdrop = <Backdrop click={this.backdropClickHandler}/>;
-        }
-
         let imgClass;
+        let Gitlabel;
+        let Weblabel;
+        let body;
 
-        if (this.state.fire_path === "Programming/Holistic.png") {
-            imgClass = "Promo-image-tall"
-        }
-
+        if(this.state.sideDrawerOpen) {backdrop = <Backdrop click={this.backdropClickHandler}/>;}
+        if (this.state.fire_path === "Programming/Holistic.png") {imgClass = "Promo-image-tall"}
+        else {imgClass = "Promo-image"}
+        if(this.state.fire_path === "Programming/Drone.png") {Gitlabel = "Available upon Request"; Weblabel = "None"}
+        else {Gitlabel = "Here"; Weblabel = "Here"}
+        if(this.state.fire_path === " ") {
+           body =
+               (<div className="Info-wrapper">
+                    <Row className="Info-wrap">
+                        <h1 className="Title">Welcome to my Programming Projects</h1>
+                        <p className="Text-description">This section is a portfolio containing a combination of paid, school, and self-interest projects. Here you can find the details of some of the projects I have worked on, such as: details, features, project completion time etc. the project listed below is on this own website. Please take your time  </p>
+                        <h4 className="Extra-info"><b>Github Link: </b><a href="#">{Gitlabel}</a></h4>
+                        <h4 className="Extra-info"><b>Features: </b></h4>
+                        <h4 className="Extra-info"><b>Tech Stack: </b></h4>
+                        <h4 className="Extra-info"><b>Completion time for project:</b></h4>
+                    </Row>
+                </div>); }
         else {
-            imgClass = "Promo-image"
-        }
+            body =
+                (<div>
+                    <Row className="Promo-image-wrap">
+                        <div className="Image-wrap">
+                            <Image className={imgClass} src={this.state.pic} />
+                        </div>
+                    </Row>
+                    <Row className="Info-wrap">
+                        <h1 className="Title">Project Description</h1>
+                        <p className="Text-description">{this.state.desc}</p>
+                        <h4 className="Extra-info"><b>Github Link: </b><a href="#">{Gitlabel}</a></h4>
+                        <h4 className="Extra-info"><b>Original Website: </b><a href="#">{Weblabel}</a></h4>
+                        <h4 className="Extra-info"><b>Features: </b></h4>
+                        <h4 className="Extra-info"><b>Tech Stack: </b></h4>
+                        <h4 className="Extra-info"><b>Completion time for project:</b></h4>
+                    </Row>
+                </div>); }
 
         return (
             <div className="Programming-wrap">
@@ -94,13 +126,12 @@ class Programming extends Component {
                                 choice={this.state.option}
                                 action={this.childHandler}
                                 show={this.state.sideDrawerOpen}
-                                hide={this.drawerToggleClickHandler} />
+                                hide={this.drawerToggleClickHandler}
+                                description={this.descriptionUpdater} />
                             {backdrop}
                         </Col>
                     </Row>
-                    <Row className="Promo-image-wrap">
-                        <div className="Image-wrap"><Image className={imgClass} src={this.state.pic} /></div>
-                    </Row>
+                        {body}
                 </Container>
             </div>
         );

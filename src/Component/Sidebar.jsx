@@ -80,12 +80,14 @@ const routes = [
         option: "Prog",
         fire_path: "Programming/Holistic.png",
         // sidebar: () => <div>shoelaces!</div>,
-        main: () => <Options/>
+        // main: () => <p>yo</p>,
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
     },
     {   label: "Gifting Guru",
         path: "/Programming",
         option: "Prog",
         fire_path: "Programming/Gifting.png",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
     },
@@ -93,6 +95,7 @@ const routes = [
         path: "/Programming",
         option: "Prog",
         fire_path: "Programming/Drone.png",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
     },
@@ -100,6 +103,7 @@ const routes = [
         path: "/Programming",
         option: "Prog",
         fire_path: "Programming/BOTB.png",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
     },
@@ -134,10 +138,12 @@ class Sidebar extends Component {
                 choice: " ",
                 action: " ",
             };
-
-            console.log(this.props.choice);
-            console.log(this.props.action);
         }
+
+/*    onClick(path, description) {
+        this.props.action(path);
+        this.props.description(description);
+    }*/
 
     render() {
             let drawerClasses = 'Sidebar';
@@ -151,7 +157,7 @@ class Sidebar extends Component {
                         <div className="sm-wrapper">
                         {routes.filter(routes => routes.option === this.props.choice).map((route, index) => (
                         <li className="list">
-                            <Link key={index} to={route.path} className="list-anchor" onClick={() => this.props.action(route.fire_path)}>{route.label} </Link>
+                            <Link key={index} to={route.path} className="list-anchor" onClick={() => {this.props.action(route.fire_path); this.props.description(route.description);}}>{route.label} </Link>
                         </li>
                         ))}
                         </div>
@@ -185,36 +191,6 @@ class Sidebar extends Component {
                             </li>
                         </div>
                     </ul>
-
-                    {routes.map((route, index) => (
-                        // You can render a <Route> in as many places
-                        // as you want in your app. It will render along
-                        // with any other <Route>s that also match the URL.
-                        // So, a sidebar or breadcrumbs or anything else
-                        // that requires you to render multiple things
-                        // in multiple places at the same URL is nothing
-                        // more than multiple <Route>s.
-                        <Route
-                            key={index}
-                            path={route.path}
-                            exact={route.exact}
-                            component={route.sidebar}
-                        />
-                    ))}
-
-
-{/*                <div>
-                    {routes.map((route, index) => (
-                        // Render more <Route>s with the same paths as
-                        // above, but different components this time.
-                        <Route
-                            key={index}
-                            path={route.path}
-                            exact={route.exact}
-                            component={route.main}
-                        />
-                    ))}
-                </div>*/}
                 </div>
         );
     }

@@ -7,7 +7,6 @@
 .Title {
     text-align:center;
     color: #F5F5F5;
-    margin: 5% 0 0 -5%;
 }
 
 .Sidebar-area {
@@ -67,11 +66,12 @@
     padding-right: 0;
 }
 
-.Promo-image-wrap {
+.Promo-image-wrap, .Info-wrap {
     width: 80%;
     height: 80%;
     margin: 0 auto;
     padding: 5rem;
+    background: #191b1e;
 }
 
 .Image-wrap .Promo-image{
@@ -87,4 +87,28 @@
     margin-right: auto;
     width: 50%;
 }
+
+.Info-wrap {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #191b1e;
+    color: #F5F5F5;
+}
+
+.Text-description {
+    font-size: 22px;
+    padding: 3rem 0;
+    text-align: justify;
+}
+
+.Extra-info {
+    text-align:justify;
+}
+
+.Info-wrapper {
+    margin: 5rem 0;
+}
+
 
