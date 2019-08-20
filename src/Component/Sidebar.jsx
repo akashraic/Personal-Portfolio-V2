@@ -79,50 +79,99 @@ const routes = [
         path: "/Programming",
         option: "Prog",
         fire_path: "Programming/Holistic.png",
-        // sidebar: () => <div>shoelaces!</div>,
-        // main: () => <p>yo</p>,
+        git: "https://github.com/muztank10/holistic-bodies/blob/master/public/index.html",
+        website: "https://holisticbodies.ca/",
+        specs: "Home, About, Contact, Social media, Mailchimp subscription form built in, Google Blog integration, Merchandise store embedded in website, User traffic tracking",
+        techStack: " ReactJs Framework, NOde.js, Ecwid, React-Bootstrap, MailChimp API, Firebase Hosting, Google Analytics  ",
+        time: "4 Months",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
     },
     {   label: "Gifting Guru",
         path: "/Programming",
         option: "Prog",
         fire_path: "Programming/Gifting.png",
+        git: "https://github.com/muztank10/GiftingGuru",
+        website: "https://www.giftinggurucorporate.com/",
+        specs: "Home, About, Contact, User input form, Displays recommendations from algorithm",
+        techStack: " HTML, CSS, PHP, MySQL, JavaScript, Google Analytics ",
+        time: "3 Months",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        // sidebar: () => <div>shoelaces!</div>,
-        main: () => <Options/>
     },
     {   label: "Drone and City Simulator",
         path: "/Programming",
         option: "Prog",
         fire_path: "Programming/Drone.png",
+        git: "/Contact",
+        website: "/Contact",
+        specs: "Texture Mapping, City Saving, Drone Movement, 3rd to 1st person view",
+        techStack: " OpenGL and C",
+        time: "3 Months",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
     },
-    {   label: "Battle of the Bands",
+    {   label: "Battle of the Bands 2018",
         path: "/Programming",
         option: "Prog",
         fire_path: "Programming/BOTB.png",
+        git: "https://github.com/muztank10/Battle-of-the-Bands-2018",
+        website: "http://stw.ryerson.ca/~music/",
+        specs: "Home, About, Contact, Social Media, User input form for auditions and feedback, FAQ section, Sponsors, JQuery Countdown clock",
+        techStack: " HTML, CSS, JQuery, JavaScript, Google Analytics, React Bootstrap ",
+        time: "2 weeks",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    },
+    {   label: "My Website",
+        path: "/Programming",
+        option: "Prog",
+        fire_path: "Programming/Personal.png",
+        git: "https://github.com/muztank10/Personal-Portfolio-V2",
+        website: "#",
+        specs: "Home, About, Contact, Photo Gallery, Project displays, Google Analytics",
+        techStack: "React JS, Three.js, React-Bootstrap, Firebase Storage and hosting, Node.js, React-Router",
+        time: "2 Months",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
         // sidebar: () => <div>shoelaces!</div>,
         main: () => <Options/>
     },
-    {   label: "Battle of the Bands (Marketing Lead)",
-        path: "/Photography",
+    {   label: "Battle of the Bands 2018 (Marketing Lead)",
+        path: "/Projects",
         option: "Proj",
-        // sidebar: () => <div>shoelaces!</div>,
+        fire_path: "Projects/BOTB2018.png",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        webLink: "http://stw.ryerson.ca/~music/" ,
+        Resp: "Lorem ipsum dolor sit amet" ,
+        Accomp: "Lorem ipsum dolor sit amet",
+        time: "8 months ",
+        linkLabel: "Event Page",
+        relLinks: "https://www.facebook.com/events/mattamy-athletic-centre/battle-of-the-bands-2018/390263968111324/",
         main: () => <Options/>
     },
-    {   label: "Battle of the Bands (Event Organizer)",
-        path: "/Photography",
+    {   label: "Battle of the Bands 2019 (Event Organizer)",
+        path: "/Projects",
         option: "Proj",
-        // sidebar: () => <div>shoelaces!</div>,
+        fire_path: "Projects/BOTB2019.png",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        webLink: "http://stw.ryerson.ca/~music/" ,
+        Resp: "Lorem ipsum dolor sit amet" ,
+        Accomp: "Lorem ipsum dolor sit amet",
+        time: "1 year ",
+        linkLabel: "Article about Battle of the Bands",
+        relLinks: "https://www.canculturemag.com/music-1/2019/4/2/tequila-nosedive-steals-the-show-at-ryersons-battle-of-the-bands",
         main: () => <Options/>
     },
-    {   label: "Musicians@Ryerson",
-        path: "/Photography",
+    {   label: "Musicians@Ryerson Website (Manager)",
+        path: "/Projects",
         option: "Proj",
-        // sidebar: () => <div>shoelaces!</div>,
+        fire_path: "Projects/Music.png",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        webLink: "http://stw.ryerson.ca/~music/Main_Website/M@R_Home.html" ,
+        Resp: "Lorem ipsum dolor sit amet" ,
+        Accomp: "Lorem ipsum dolor sit amet",
+        time: "2 months",
+        linkLabel: "N/A",
+        relLinks: "#",
         main: () => <Options/>
     },
 ];
@@ -139,12 +188,6 @@ class Sidebar extends Component {
                 action: " ",
             };
         }
-
-/*    onClick(path, description) {
-        this.props.action(path);
-        this.props.description(description);
-    }*/
-
     render() {
             let drawerClasses = 'Sidebar';
             if(this.props.show) {
@@ -156,20 +199,45 @@ class Sidebar extends Component {
                     <ul className="nav-list">
                         <div className="sm-wrapper">
                         {routes.filter(routes => routes.option === this.props.choice).map((route, index) => (
-                        <li className="list">
-                            <Link key={index} to={route.path} className="list-anchor" onClick={() => {this.props.action(route.fire_path); this.props.description(route.description);}}>{route.label} </Link>
+                        <li className="list" >
+                            <Link
+                                key={index}
+                                to={route.path}
+                                className="list-anchor"
+                                onClick={() => {
+                                    this.props.action(route.fire_path);
+                                    if(this.props.description){
+                                        this.props.description(
+                                            route.description,
+                                            route.git,
+                                            route.website,
+                                            route.specs,
+                                            route.techStack,
+                                            route.time)
+                                    }
+                                    else if(this.props.project) {
+                                        this.props.project(
+                                            route.description,
+                                            route.webLink,
+                                            route.Resp,
+                                            route.Accomp,
+                                            route.time,
+                                            route.linkLabel,
+                                            route.relLinks)
+                                    }
+                                    this.props.hide()
+                                }}
+                            >{route.label} </Link>
                         </li>
                         ))}
                         </div>
-
-                        <div className="spacer"/>
-
+                        <div className="spacer"/>1
                         <div className="Info-wrapper">
                             <li className="Lower-list">
-                                <Link to="/Pricing" className="list-anchor">Pricing</Link>
+                                <Link to="/About" className="list-anchor">About Me</Link>
                             </li>
                             <li className="Lower-list">
-                                <Link to="/About" className="list-anchor">About</Link>
+                                <Link to="/Pricing" className="list-anchor">Pricing</Link>
                             </li>
                             <li className="Lower-list">
                                 <Link to="/Contact" className="list-anchor">Contact</Link>

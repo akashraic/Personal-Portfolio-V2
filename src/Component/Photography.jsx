@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
-import {Container, Row, Col, Image} from 'react-bootstrap';
+import {Button, Row, Col, Image} from 'react-bootstrap';
 import './Main_content.css';
 import Sidebar from "./Sidebar";
 import * as firebase from 'firebase';
 import Backdrop from './Backdrop/Backdrop';
 import Toolbar from "./SideDrawer/Toolbar";
 import ModalGallery from "./Modal/ModalGallery";
+import {Link} from "react-router-dom";
 
 class Photography extends Component {
 
@@ -155,6 +156,14 @@ class Photography extends Component {
                                 {backdrop}
                             </Col>
                             <div className="Images">{imgURL}</div>
+                        </Row>
+                        <Row className="btn-wrapper-wrap">
+                            <Col lg={4}/>
+                            <Col lg={4} className="btn-wrapper">
+                                {/*<Button className="btn" block onClick={this.changeState}>Continue</Button>*/}
+                                <Link to='/About' className={"anchor"}><Button className="btn" block>Learn About me</Button></Link>
+                            </Col>
+                            <Col lg={4}/>
                         </Row>
                         <ModalGallery
                             isOpen={this.state.showModal}
