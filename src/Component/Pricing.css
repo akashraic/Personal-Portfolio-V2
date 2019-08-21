@@ -1,0 +1,17 @@
+.Pricing {
+    width:100%;
+    height: auto;
+    margin:0;
+}
+
+.Pricing-text-wrap {
+    width: 80%;
+    margin: 5% 10%;
+}
+
+.Pricing-text {
+    font-size: 22px;
+    text-align: justify;
+    color: #F5F5F5;
+    margin: 3rem 3rem;
+}

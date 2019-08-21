@@ -7,8 +7,9 @@
 .Akash {
     width: 80%;
     height: auto;
-    margin: 0 auto;
-    padding: 2rem;
+    margin: 5rem auto;
+    padding: 5rem;
+    transform: rotate(270deg);
 }
 
 .Text {
@@ -28,7 +29,7 @@
     margin-left: 25%;
     padding: 3rem 0;
 }
-
+/*
 .Three {
     background: #2a2c2f;
     color: #2a2c2f;
@@ -45,6 +46,7 @@
 
 .Skills-list {
     list-style: none;
-}
+    color: #F5F5F5;
+}*/
 
 

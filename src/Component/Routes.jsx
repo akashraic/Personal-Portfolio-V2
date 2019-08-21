@@ -8,6 +8,7 @@ import Photography from "./Photography";
 import Programming from "./Programming";
 import Projects from "./Projects";
 import About from "./About";
+import Pricing from "./Pricing";
 
 class Routes extends Component {
 
@@ -21,8 +22,8 @@ class Routes extends Component {
                     <Route exact path='/Programming' component={Programming}/>
                     <Route exact path='/Projects' component={Projects}/>
                     <Route exact path='/About' component={About}/>
+                    <Route exact path='/Pricing' component={Pricing}/>
                     {/*<Route exact path='/Contact' component={Contact}/>*/}
-                    {/*<Route exact path='/Pricing' component={Pricing}/>*/}
                 </Switch>
 
             </div>

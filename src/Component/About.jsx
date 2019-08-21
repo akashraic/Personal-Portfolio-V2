@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
 
 import './About.css';
-import {Col, Container, Image, Row} from "react-bootstrap";
+import {Button, Col, Container, Image, Row} from "react-bootstrap";
 import * as THREE from 'three';
+import {Link} from "react-router-dom";
 
 class About extends Component {
-    componentDidMount() {
+   /* componentDidMount() {
         const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0x2a2c2f);
         const camera = new THREE.PerspectiveCamera(
             75,
             window.innerWidth / window.innerHeight,
@@ -34,31 +36,22 @@ class About extends Component {
         };
 
         animate();
-    }
+    }*/
     render(){
         return(
             <div className="About-wrap">
                 <Container className="About">
-{/*                    <Row>
+                    <Row>
                         <Col>
                             <h1 className="Title">About me</h1>
                         </Col>
-                    </Row>*/}
-{/*                    <Row>
-                        <Col lg={6}>
-                            <Image className="Akash one" src="assets/Akash_one.jpg"/>
-                        </Col>
-                        <Col lg={6}>
-                            <Image className="Akash two" src="assets/Akash_two.jpg"/>
-                        </Col>
-                    </Row>*/}
+                    </Row>
                     <Row>
                         <Col lg={6}>
-                            <h1 className="Title-name">About me</h1>
                             <p className="Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                         </Col>
-                        <Col lg={6} className="Three-wrap">
-                            <div className="Skills">
+                        <Col lg={6} className="Image-wrap">
+                            {/*<div className="Skills">
                                 <ul className="Skills-list">
                                     <li className="Skills-list-items">Photography</li>
                                     <li className="Skills-list-items">Git</li>
@@ -68,8 +61,18 @@ class About extends Component {
                                     <li className="Skills-list-items">Full-Stack Development</li>
                                 </ul>
                             </div>
-                            <div className="Three" ref={ref => (this.mount = ref)} />
+                            <div className="Three" ref={ref => (this.mount = ref)}>
+                            </div>*/}
+                            <Image className="Akash one" src="assets/Akash_two.JPG"/>
                         </Col>
+                    </Row>
+                    <Row className="btn-wrapper-wrap">
+                        <Col lg={4}/>
+                        <Col lg={4} className="btn-wrapper">
+                            {/*<Button className="btn" block onClick={this.changeState}>Continue</Button>*/}
+                            <Link to='/Pricing' className={"anchor"}><Button className="btn" block>Pricing</Button></Link>
+                        </Col>
+                        <Col lg={4}/>
                     </Row>
                 </Container>
             </div>
