@@ -96,7 +96,7 @@ class Programming extends Component {
            body =
                (<div className="Info-wrapper">
                     <Row className="Info-wrap">
-                        <h1 className="Title">Welcome to my Programming Projects</h1>
+                        <h1 className="Title">Programming Projects</h1>
                         <p className="Text-description">
                             This section is a portfolio containing a combination of paid, school,
                             and self-interest projects. The details of some of the projects I have

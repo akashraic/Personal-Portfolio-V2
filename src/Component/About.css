@@ -1,0 +1,50 @@
+.About {
+    width:100%;
+    height: auto;
+    margin:0;
+}
+
+.Akash {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.Text {
+    font-size: 22px;
+    padding: 5rem 0;
+    text-align: justify;
+    color: #F5F5F5;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+
+.Title-name {
+    text-align:center;
+    color: #F5F5F5;
+    margin-left: 25%;
+    padding: 3rem 0;
+}
+
+.Three {
+    background: #2a2c2f;
+    color: #2a2c2f;
+}
+
+.Skills {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    display:block;
+}
+
+.Skills-list {
+    list-style: none;
+}
+
+
