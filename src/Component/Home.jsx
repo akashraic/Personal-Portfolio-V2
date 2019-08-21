@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Container} from 'react-bootstrap';
-import './Home.css';
 import Routes from "./Routes";
 
 class Home extends Component {
