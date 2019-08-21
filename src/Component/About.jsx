@@ -48,7 +48,9 @@ class About extends Component {
                     </Row>
                     <Row>
                         <Col lg={6}>
-                            <p className="Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                            <p className="Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum<br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                            <h2 className="Text Head">Contact:</h2>
+                            <p className="Text two">For all Inquiries <br /> Please email me at:<br /> <a href="mailto:akashrai10.ar10@gmail.com">akashrai10.ar10@gmail.com</a></p>
                         </Col>
                         <Col lg={6} className="Image-wrap">
                             {/*<div className="Skills">
@@ -63,14 +65,14 @@ class About extends Component {
                             </div>
                             <div className="Three" ref={ref => (this.mount = ref)}>
                             </div>*/}
-                            <Image className="Akash one" src="assets/Akash_two.JPG"/>
+                            <Image className="About-Akash one" src="assets/Akash_two.JPG"/>
                         </Col>
                     </Row>
                     <Row className="btn-wrapper-wrap">
                         <Col lg={4}/>
                         <Col lg={4} className="btn-wrapper">
                             {/*<Button className="btn" block onClick={this.changeState}>Continue</Button>*/}
-                            <Link to='/Pricing' className={"anchor"}><Button className="btn" block>Pricing</Button></Link>
+                            <Link to='/' className={"anchor"}><Button className="btn" block>Return Home</Button></Link>
                         </Col>
                         <Col lg={4}/>
                     </Row>
@@ -81,4 +83,3 @@ class About extends Component {
 }
 
 export default About;
-;

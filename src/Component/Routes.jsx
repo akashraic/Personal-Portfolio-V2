@@ -12,6 +12,10 @@ import Pricing from "./Pricing";
 
 class Routes extends Component {
 
+    componentDidUpdate() {
+        window.scrollTo(0,0);
+    }
+
     render() {
         return (
             <div className="Router">
@@ -23,7 +27,6 @@ class Routes extends Component {
                     <Route exact path='/Projects' component={Projects}/>
                     <Route exact path='/About' component={About}/>
                     <Route exact path='/Pricing' component={Pricing}/>
-                    {/*<Route exact path='/Contact' component={Contact}/>*/}
                 </Switch>
 
             </div>

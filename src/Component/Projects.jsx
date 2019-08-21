@@ -148,7 +148,7 @@ class Projects extends Component {
                         <Col lg={4}/>
                         <Col lg={4} className="btn-wrapper">
                             {/*<Button className="btn" block onClick={this.changeState}>Continue</Button>*/}
-                            <Link to='/About' className={"anchor"}><Button className="btn" block>Learn About me</Button></Link>
+                            <Link to='/Pricing' className={"anchor"}><Button className="btn" block>Pricing</Button></Link>
                         </Col>
                         <Col lg={4}/>
                     </Row>

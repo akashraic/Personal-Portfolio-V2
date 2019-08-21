@@ -234,13 +234,10 @@ class Sidebar extends Component {
                         <div className="spacer"/>1
                         <div className="Info-wrapper">
                             <li className="Lower-list">
-                                <Link to="/About" className="list-anchor">About Me</Link>
-                            </li>
-                            <li className="Lower-list">
                                 <Link to="/Pricing" className="list-anchor">Pricing</Link>
                             </li>
                             <li className="Lower-list">
-                                <Link to="/Contact" className="list-anchor">Contact</Link>
+                                <Link to="/About" className="list-anchor">About Me</Link>
                             </li>
                         </div>
 

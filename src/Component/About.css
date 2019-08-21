@@ -4,7 +4,7 @@
     margin:0;
 }
 
-.Akash {
+.About-Akash {
     width: 80%;
     height: auto;
     margin: 5rem auto;
@@ -21,6 +21,14 @@
     position: absolute;
     top: 50%;
     left: 25%;
+}
+
+.Head {
+    top: 18em;
+}
+
+.two {
+    top: 21em;
 }
 
 .Title-name {

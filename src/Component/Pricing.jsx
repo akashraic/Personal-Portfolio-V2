@@ -102,7 +102,7 @@ class Pricing extends Component {
                         <Col lg={4}/>
                         <Col lg={4} className="btn-wrapper">
                             {/*<Button className="btn" block onClick={this.changeState}>Continue</Button>*/}
-                            <Link to='/Contact' className={"anchor"}><Button className="btn" block>Contact</Button></Link>
+                            <Link to='/About' className={"anchor"}><Button className="btn" block>Learn About me</Button></Link>
                         </Col>
                         <Col lg={4}/>
                     </Row>

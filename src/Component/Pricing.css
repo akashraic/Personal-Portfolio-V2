@@ -52,7 +52,7 @@
     transform: scale(1.04);
     color: #F5F5F5;
     background-color: #2a2c2f;
-    /*border-radius: 25px;*/
+    border-radius: 5px;
     border: 2px solid #F5F5F5;
 }
 
