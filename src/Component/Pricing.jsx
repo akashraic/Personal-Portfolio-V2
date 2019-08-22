@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import './Pricing.css';
 import {Button, Col, Container, Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
+import Footer from "./Footer/Footer";
 
 class Pricing extends Component {
     render(){
@@ -106,8 +107,7 @@ class Pricing extends Component {
                         </Col>
                         <Col lg={4}/>
                     </Row>
-
-
+                    <Footer/>
                 </Container>
             </div>
         );

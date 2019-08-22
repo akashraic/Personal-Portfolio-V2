@@ -1,7 +1,8 @@
 .Programming, .Projects{
     width:100%;
     height: auto;
-    margin:0;
+    margin:0 0 120px 0;
+    padding:0;
 }
 
 .Title {
@@ -52,9 +53,10 @@
     padding: 0.5rem 0.5rem;
 }
 
-.Photography {
+.Photography-wrap{
     padding-right: 0;
     padding-left: 0;
+    margin:0 0 120px 0;
 }
 
 .Title-row, .Image-and-sidebar {

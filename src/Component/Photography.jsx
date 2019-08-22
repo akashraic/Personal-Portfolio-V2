@@ -7,6 +7,7 @@ import Backdrop from './Backdrop/Backdrop';
 import Toolbar from "./SideDrawer/Toolbar";
 import ModalGallery from "./Modal/ModalGallery";
 import {Link} from "react-router-dom";
+import Footer from "./Footer/Footer";
 
 class Photography extends Component {
 
@@ -165,6 +166,7 @@ class Photography extends Component {
                             </Col>
                             <Col lg={4}/>
                         </Row>
+                        <Footer/>
                         <ModalGallery
                             isOpen={this.state.showModal}
                             src={this.state.fileURL[this.state.photoID]}

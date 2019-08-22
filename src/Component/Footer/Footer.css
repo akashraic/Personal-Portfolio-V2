@@ -1,0 +1,115 @@
+/*CSS code for Foot.jsx*/
+
+.Foot
+{
+    background-color: #1d1e1d;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+
+.link
+{
+    text-decoration: none;
+    color: #f8f8f8;
+    font-size: 18px;
+}
+
+.link:hover
+{
+    text-decoration: none;
+    color: #aaaaaa;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.Foot-list
+{
+    padding: 5% 0 5% 10%;
+    margin: 0 auto;
+    text-align:center;
+}
+
+.list-unstyled
+{
+    text-align:center;
+}
+
+.Foot .footer-copyright
+{
+    margin: 0 auto;
+    padding: 0 2% 0 0;
+    color: #aaaaaa;
+}
+
+.footer-copyright {
+    text-align: center;
+    font-size: 22px;
+}
+
+.horizontal
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 2rem;
+}
+.first
+{
+    border-left: none;
+    padding-left: 0;
+}
+
+/*responsive styling*/
+
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+    .list-unstyled {
+        font-size:15px;
+    }
+    .Foot .footer-copyright
+    {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .list {
+        padding: 5% 0 5% 15%;
+    }
+
+    .list-unstyled {
+        font-size:15px;
+    }
+    .Foot .footer-copyright
+    {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .list {
+        padding: 5% 7% 5% 10%;
+    }
+
+    .list-unstyled {
+        font-size:12px;
+    }
+    .Foot .footer-copyright
+    {
+        font-size: 12px;
+    }
+
+}
+
+
+/*.developer-copyright
+{
+    margin: 0 auto;
+    padding: 0 0 5% 5%;
+    color: #aaaaaa;
+    text-align: center;
+    font-size:10px;
+}*/

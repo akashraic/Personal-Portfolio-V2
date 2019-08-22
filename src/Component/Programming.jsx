@@ -6,6 +6,7 @@ import Toolbar from "./SideDrawer/Toolbar";
 import Backdrop from "./Backdrop/Backdrop";
 import * as firebase from 'firebase';
 import {Link} from "react-router-dom";
+import Footer from "./Footer/Footer";
 
 class Programming extends Component {
     constructor(props) {
@@ -157,6 +158,7 @@ class Programming extends Component {
                         </Col>
                         <Col lg={4}/>
                     </Row>
+                    <Footer/>
                 </Container>
             </div>
         );

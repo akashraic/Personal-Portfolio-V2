@@ -231,8 +231,8 @@ class Sidebar extends Component {
                         </li>
                         ))}
                         </div>
-                        <div className="spacer"/>1
-                        <div className="Info-wrapper">
+                        <div className="spacer"/>
+                        <div className="Lower-list-wrapper">
                             <li className="Lower-list">
                                 <Link to="/Pricing" className="list-anchor">Pricing</Link>
                             </li>

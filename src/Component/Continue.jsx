@@ -4,6 +4,7 @@ import './Home.jsx'
 import './Continue.css';
 import {Link} from "react-router-dom";
 import Header from "./Header";
+import * as THREE from 'three';
 
 class Continue extends Component {
 

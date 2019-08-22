@@ -4,6 +4,7 @@ import './About.css';
 import {Button, Col, Container, Image, Row} from "react-bootstrap";
 import * as THREE from 'three';
 import {Link} from "react-router-dom";
+import Footer from "./Footer/Footer";
 
 class About extends Component {
    /* componentDidMount() {
@@ -76,6 +77,7 @@ class About extends Component {
                         </Col>
                         <Col lg={4}/>
                     </Row>
+                    <Footer/>
                 </Container>
             </div>
         );

@@ -47,6 +47,10 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
 }
 
+.Lower-list-wrapper {
+    margin: 2rem 0;
+}
+
 .Lower-list {
     list-style: none;
     width:100%;
