@@ -1,6 +1,15 @@
+.Options{
+    height:100%;
+}
+
 .Categories-wrap{
     width: 60%;
     height: auto;
+}
+
+
+.Photo, .Prog, .Other {
+
 }
 
 .Categories img{
@@ -24,4 +33,21 @@
 
 a:hover + label{
     display:block;
+}
+
+.space {
+    height: 100%;
+}
+
+/*code to cover the entire web page*/
+.BG-animation {
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
 }
