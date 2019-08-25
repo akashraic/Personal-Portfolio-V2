@@ -35,10 +35,6 @@ a:hover + label{
     display:block;
 }
 
-.space {
-    height: 100%;
-}
-
 /*code to cover the entire web page*/
 .BG-animation {
     position:fixed;

@@ -1,7 +1,7 @@
 .Programming, .Projects{
     width:100%;
     height: auto;
-    margin:0 0 120px 0;
+    margin:50px 0 120px 0;
     padding:0;
 }
 
@@ -56,7 +56,7 @@
 .Photography-wrap{
     padding-right: 0;
     padding-left: 0;
-    margin:0 0 120px 0;
+    margin: 0 0 120px 0;
 }
 
 .Title-row, .Image-and-sidebar {
@@ -73,7 +73,7 @@
     width: 80%;
     height: 80%;
     margin: 0 auto;
-    padding: 5rem;
+    padding: 3rem;
     background: #191b1e;
 }
 

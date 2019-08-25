@@ -8,6 +8,7 @@ import Toolbar from "./SideDrawer/Toolbar";
 import ModalGallery from "./Modal/ModalGallery";
 import {Link} from "react-router-dom";
 import Footer from "./Footer/Footer";
+import {CSSTransition, TransitionGroup} from 'react-transition-group'
 
 class Photography extends Component {
 
@@ -156,13 +157,16 @@ class Photography extends Component {
                                     hide={this.drawerToggleClickHandler} />
                                 {backdrop}
                             </Col>
-                            <div className="Images">{imgURL}</div>
+
+                            <div className="Images">
+                                {imgURL}
+                                </div>
                         </Row>
                         <Row className="btn-wrapper-wrap">
                             <Col lg={4}/>
                             <Col lg={4} className="btn-wrapper">
                                 {/*<Button className="btn" block onClick={this.changeState}>Continue</Button>*/}
-                                <Link to='/Pricing' className={"anchor"}><Button className="btn" block>Pricing</Button></Link>
+                                <Link to='/About' className={"anchor"}><Button className="btn" block>Learn About me</Button></Link>
                             </Col>
                             <Col lg={4}/>
                         </Row>

@@ -95,16 +95,17 @@ class Projects extends Component {
                     <Row className="Info-wrap">
                         <h1 className="Title">Project Management</h1>
                         <p className="Text-description">
-                            This section is a portfolio containing a combination of paid, school,
-                            and self-interest projects. The details of some of the projects I have
-                            worked on are available here, such as: the project's purpose, features,
-                            project completion time etc. The Github link and original website link
-                            is also available. but please note that my contribution to the
-                            project is only the code found in my github, any further changes
-                            may ave been made by the owner themselves. You can find my list
-                            of projects by clicking the side menu button. To come back to this
-                            page, click on "Programming" in the navigation bar above. If any of
-                            projects are of interest to you, then please do not hesitate
+                            This section is a portfolio containing projects I have worked on while
+                            working with a team or an organization. This section shows my ability to
+                            handle the management and buisness side of projects. The details, vision,
+                            and accomplishments of some of my projects  are available here.
+                            The original website link is also available. but please note that although
+                            I may have contributed a significant amount, every project had a team of
+                            amazing people along the way and the completion of these projects
+                            would not be possible without their contribution. To learn more about my team,
+                            be sure to contact me. You can find my list of projects by clicking the side
+                            menu button. To come back to this page, click on "Programming" in the navigation bar
+                            above. If any of projects are of interest to you, then please do not hesitate
                             to <Link to="#">contact</Link> me for more information
                         </p>
                     </Row>
@@ -148,8 +149,7 @@ class Projects extends Component {
                     <Row className="btn-wrapper-wrap">
                         <Col lg={4}/>
                         <Col lg={4} className="btn-wrapper">
-                            {/*<Button className="btn" block onClick={this.changeState}>Continue</Button>*/}
-                            <Link to='/Pricing' className={"anchor"}><Button className="btn" block>Pricing</Button></Link>
+                            <Link to='/About' className={"anchor"}><Button className="btn" block>Learn About me</Button></Link>
                         </Col>
                         <Col lg={4}/>
                     </Row>

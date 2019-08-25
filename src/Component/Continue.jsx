@@ -5,7 +5,7 @@ import './Continue.css';
 import {Link} from "react-router-dom";
 import Header from "./Header";
 import * as THREE from 'three';
-import RINGS from './vanta.net.js';
+import NET from '../vanta.net.js';
 
 
 class Continue extends Component {
@@ -30,10 +30,11 @@ class Continue extends Component {
         this.myRef = React.createRef()
     }
     componentDidMount() {
-        this.effect = RINGS({
+        this.effect = NET({
             el: this.myRef.current,
             color: 0xffffff,
             backgroundColor: 0x2a2c2f,
+            points: 11.00
         })
     }
     componentWillUnmount() {

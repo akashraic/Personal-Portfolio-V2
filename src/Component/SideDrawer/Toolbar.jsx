@@ -13,9 +13,9 @@ const Toolbar = props => (
             <div className="spacer"/>
             <div className="Toolbar-navs">
                 <ul className="Toolbar-nav-list">
-                    <li className="Toolbar-nav-items"><Link clasName="Toolbar-links" to="/Photography" onClick={() => props.path("Photo Gallery/Best")}>Photography</Link></li>
-                    <li className="Toolbar-nav-items"><Link clasName="Toolbar-links" to="/Programming" onClick={() => props.path(" ")}>Programming</Link></li>
-                    <li className="Toolbar-nav-items"><Link clasName="Toolbar-links" to="/Projects">Project Management</Link></li>
+                    <li className="Toolbar-nav-items"><Link className="Toolbar-links" to="/Photography" onClick={() => props.path("Photo Gallery/Best")}>Photography</Link></li>
+                    <li className="Toolbar-nav-items"><Link className="Toolbar-links" to="/Programming" onClick={() => props.path(" ")}>Programming</Link></li>
+                    <li className="Toolbar-nav-items"><Link className="Toolbar-links" to="/Projects">Project Management</Link></li>
                 </ul>
             </div>
         </nav>

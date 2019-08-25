@@ -8,7 +8,8 @@ import Photography from "./Photography";
 import Programming from "./Programming";
 import Projects from "./Projects";
 import About from "./About";
-import Pricing from "./Pricing";
+import Pricing from "./Pricing/Pricing";
+import {CSSTransition, TransitionGroup} from "react-transition-group";
 
 class Routes extends Component {
 
@@ -26,9 +27,8 @@ class Routes extends Component {
                     <Route exact path='/Programming' component={Programming}/>
                     <Route exact path='/Projects' component={Projects}/>
                     <Route exact path='/About' component={About}/>
-                    <Route exact path='/Pricing' component={Pricing}/>
+                    {/*<Route exact path='/Pricing' component={Pricing}/>*/}
                 </Switch>
-
             </div>
         );
     }

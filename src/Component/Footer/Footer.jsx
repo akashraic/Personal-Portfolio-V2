@@ -17,7 +17,7 @@ class Foot extends Component {
                                 <li><Link to="/Photography" className="link">Photography</Link></li>
                                 <li><Link to="/Programming" className="link">Programming</Link></li>
                                 <li><Link to="/Projects" className="link">Project Management</Link></li>
-                                <li><Link to="/Pricing" className="link">Pricing</Link></li>
+                                {/*<li><Link to="/Pricing" className="link">Pricing</Link></li>*/}
                                 <li><Link to="/About" className="link">About me</Link></li>
                             </ul>
                             <h5 className="footer-copyright developer-copyright">&copy; {(new Date().getFullYear())} Akash Rai Chhabria</h5>

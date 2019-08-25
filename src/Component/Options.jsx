@@ -3,7 +3,7 @@ import {Container, Row, Col, Image} from 'react-bootstrap';
 import {BrowserRouter as Router, Link} from "react-router-dom";
 import './Options.css';
 import Header from "./Header";
-import RINGS from './vanta.net.js';
+import NET from '../vanta.net.js';
 
 class Options extends Component {
 
@@ -37,11 +37,11 @@ class Options extends Component {
             this.myRef = React.createRef()
         }
         componentDidMount() {
-            this.effect = RINGS({
+            this.effect = NET({
                 el: this.myRef.current,
                 color: 0xffffff,
                 backgroundColor: 0x2a2c2f,
-
+                points: 11.00
             })
         }
         componentWillUnmount() {

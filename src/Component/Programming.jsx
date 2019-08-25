@@ -100,7 +100,7 @@ class Programming extends Component {
                         <h1 className="Title">Programming Projects</h1>
                         <p className="Text-description">
                             This section is a portfolio containing a combination of paid, school,
-                            and self-interest projects. The details of some of the projects I have
+                            and self-interest programming projects. The details of some of the projects I have
                             worked on are available here, such as: the project's purpose, features,
                             project completion time etc. The Github link and original website link
                             is also available. but please note that my contribution to the
@@ -153,8 +153,7 @@ class Programming extends Component {
                     <Row className="btn-wrapper-wrap">
                         <Col lg={4}/>
                         <Col lg={4} className="btn-wrapper">
-                            {/*<Button className="btn" block onClick={this.changeState}>Continue</Button>*/}
-                            <Link to='/Pricing' className={"anchor"}><Button className="btn" block>Pricing</Button></Link>
+                            <Link to='/About' className={"anchor"}><Button className="btn" block>Learn About me</Button></Link>
                         </Col>
                         <Col lg={4}/>
                     </Row>

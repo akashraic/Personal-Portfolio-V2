@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import './Pricing.css';
 import {Button, Col, Container, Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
-import Footer from "./Footer/Footer";
+// import Footer from "./Footer/Footer";
 
 class Pricing extends Component {
     render(){
@@ -16,50 +16,43 @@ class Pricing extends Component {
                         </Col>
                         <Col lg={2}/>
                         <Col lg={8} className="Pricing-description-wrap">
-                            <p className="Pricing-Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                            <p className="Pricing-Description">Welcome to the Pricing section! the prices given below are for pre-made packages, custom packages are also available on request. If you would like to hire me for work not listed in the packages below then please contact me with details of your project! </p>
                         </Col>
                         <Col lg={2}/>
                     </Row>
-
                     <Row className="Pricing-table">
                         <Col>
                             <h1 className="Price-title">Photography Packages</h1>
                         </Col>
                         <Col lg={3} className="Pricing-option">
-                            <h1 className="Pricing-title">Ui design</h1>
+                            <h1 className="Pricing-title">Linkedin Package</h1>
                             <hr/>
-                            <p className="Pricing-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente harum
-                                voluptatum, sit cum voluptatibus inventore quae qui provident eveniet dicta at,
-                                quibusdam ipsam iusto reprehenderit hic saepe nesciunt sed illo.</p>
+                            <p className="Pricing-text">The shoot will take place with one outfit and in one location, I will provide <u>5 photos</u> delivered to you within a week.</p>
                             <hr/>
                             <div className="Price">
-                                    <span className="Price">199 <b>CAD</b></span>
+                                    <span className="Price">35/hr <b>CAD</b></span>
                             </div>
                         </Col>
                         <Col lg={3} className="Pricing-option">
-                            <h1 className="Pricing-title">Ui design</h1>
+                            <h1 className="Pricing-title">Concert Package</h1>
                             <hr/>
-                            <p  className="Pricing-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente harum
-                                voluptatum, sit cum voluptatibus inventore quae qui provident eveniet dicta at,
-                                quibusdam ipsam iusto reprehenderit hic saepe nesciunt sed illo.</p>
+                            <p  className="Pricing-text">Will provide pictures of the band playing and photos of the crowd. I will provide <u>20 photos</u> delivered to you within 2 weeks .</p>
                             <hr/>
                             <div className="Price">
-                                    <span className="Price">199 <b>CAD</b></span>
+                                    <span className="Price">50/hr <b>CAD</b></span>
                             </div>
                         </Col>
                         <Col lg={3} className="Pricing-option">
-                            <h1 className="Pricing-title">Ui design</h1>
+                            <h1 className="Pricing-title">Portrait Package</h1>
                             <hr/>
-                            <p className="Pricing-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente harum
-                                voluptatum, sit cum voluptatibus inventore quae qui provident eveniet dicta at,
-                                quibusdam ipsam iusto reprehenderit hic saepe nesciunt sed illo.</p>
+                            <p className="Pricing-text">The shoot will take place in one location with two outfits, I will provide <u>5-10 photos</u> delivered to you within a week. </p>
                             <hr/>
                             <div className="Price">
-                                    <span className="Price">199 <b>CAD</b></span>
+                                    <span className="Price">40/hr <b>CAD</b></span>
                             </div>
                         </Col>
                         <Col lg={3} className="Pricing-option">
-                            <h1 className="Pricing-title">Ui design</h1>
+                            <h1 className="Pricing-title">Pay per Photo</h1>
                             <hr/>
                             <p className="Pricing-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente harum
                                 voluptatum, sit cum voluptatibus inventore quae qui provident eveniet dicta at,
@@ -107,7 +100,7 @@ class Pricing extends Component {
                         </Col>
                         <Col lg={4}/>
                     </Row>
-                    <Footer/>
+                    {/*<Footer/>*/}
                 </Container>
             </div>
         );

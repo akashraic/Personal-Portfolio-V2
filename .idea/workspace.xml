@@ -2,26 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7970149a-0454-43b0-81f9-fc7c6d146cf7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Component/_base.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/_shaderBase.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/helpers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/vanta.birds.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/vanta.birds.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/vanta.dots.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/vanta.net.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/vanta.net.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/vanta.rings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/vanta.rings.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vanta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/personal-portfolio-v2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/personal-portfolio-v2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Continue.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Continue.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/About.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/About.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/About.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Continue.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Continue.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Main_content.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Main_content.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Options.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Options.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Options.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Options.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Photography.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Photography.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Pricing.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Pricing/Pricing.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Pricing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Pricing/Pricing.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Programming.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Programming.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Projects.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Projects.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Routes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/SideDrawer/Toolbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/SideDrawer/Toolbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Sidebar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Sidebar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/_base.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/_shaderBase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_shaderBase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/vanta.birds.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/vanta.birds.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/vanta.dots.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/vanta.net.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/vanta.net.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/vanta.rings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/vanta.rings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/vanta.rings.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/vanta.rings.min.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,74 +45,15 @@
     <splitter split-orientation="horizontal" split-proportion="0.5566465">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Projects.jsx" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Component/Projects.jsx">
+          <file leaf-file-name="Footer.jsx" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Component/Footer/Footer.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="526">
-                  <caret line="156" column="25" selection-start-line="156" selection-start-column="25" selection-end-line="156" selection-end-column="25" />
+                <state relative-caret-position="102">
+                  <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
+                    <element signature="e#199#221#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Programming.jsx" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Component/Programming.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="158">
-                  <caret line="160" column="22" selection-start-line="160" selection-start-column="22" selection-end-line="160" selection-end-column="22" />
-                  <folding>
-                    <element signature="e#0#39#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Pricing.jsx" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Component/Pricing.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="172">
-                  <caret line="109" column="27" selection-start-line="109" selection-start-column="27" selection-end-line="109" selection-end-column="27" />
-                  <folding>
-                    <element signature="e#0#39#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Continue.jsx" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Component/Continue.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/index.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="62">
-                  <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="28" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Options.jsx" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Component/Options.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="44" column="93" selection-start-line="44" selection-start-column="93" selection-end-line="44" selection-end-column="93" />
                 </state>
               </provider>
             </entry>
@@ -113,11 +62,38 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="About.css" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Sidebar.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Component/Sidebar.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="486">
+                  <caret line="100" selection-start-line="100" selection-end-line="103" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ModalGallery.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Component/Modal/ModalGallery.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="32">
+                  <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="About.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Component/About.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+                <state relative-caret-position="266">
+                  <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Header.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Component/Header.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="170">
+                  <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
                 </state>
               </provider>
             </entry>
@@ -125,31 +101,17 @@
           <file leaf-file-name="Options.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Component/Options.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="223">
-                  <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+                <state relative-caret-position="372">
+                  <caret line="38" selection-start-line="38" selection-end-line="48" selection-end-column="1" />
                 </state>
               </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="vanta.net.min.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Component/vanta.net.min.js">
-              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
           <file leaf-file-name="Main_content.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Component/Main_content.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="4" selection-end-column="14" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Footer.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Component/Footer/Footer.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+                <state relative-caret-position="136">
+                  <caret line="8" selection-start-line="8" selection-end-line="10" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -157,8 +119,8 @@
           <file leaf-file-name="Continue.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Component/Continue.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+                <state relative-caret-position="85">
+                  <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="6" selection-end-column="22" />
                 </state>
               </provider>
             </entry>
@@ -180,8 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Component/SideBar.css" />
-        <option value="$PROJECT_DIR$/src/Component/Router.jsx" />
         <option value="$PROJECT_DIR$/src/Component/SideBar.jsx" />
         <option value="$PROJECT_DIR$/src/Component/Home.css" />
         <option value="$PROJECT_DIR$/src/Component/Programming.css" />
@@ -203,34 +163,36 @@
         <option value="$PROJECT_DIR$/src/Component/Arrows/Arrow.css" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/App.jsx" />
-        <option value="$PROJECT_DIR$/src/Component/SideDrawer/Toolbar.jsx" />
         <option value="$PROJECT_DIR$/src/Component/Home.jsx" />
         <option value="$PROJECT_DIR$/src/Component/Contact.css" />
         <option value="$PROJECT_DIR$/src/Component/Contact.jsx" />
-        <option value="$PROJECT_DIR$/src/Component/Header.jsx" />
-        <option value="$PROJECT_DIR$/src/Component/Header.css" />
-        <option value="$PROJECT_DIR$/src/Component/Routes.jsx" />
         <option value="$PROJECT_DIR$/src/Component/Modal/ModalGallery.jsx" />
-        <option value="$PROJECT_DIR$/src/Component/Modal/ModalGallery.css" />
-        <option value="$PROJECT_DIR$/src/Component/Footer/Footer.jsx" />
-        <option value="$PROJECT_DIR$/src/Component/Sidebar.jsx" />
-        <option value="$PROJECT_DIR$/src/Component/Sidebar.css" />
-        <option value="$PROJECT_DIR$/src/Component/Photography.jsx" />
-        <option value="$PROJECT_DIR$/src/Component/Programming.jsx" />
-        <option value="$PROJECT_DIR$/src/Component/About.jsx" />
         <option value="$PROJECT_DIR$/src/Component/Footer/Footer.css" />
-        <option value="$PROJECT_DIR$/src/Component/Projects.jsx" />
-        <option value="$PROJECT_DIR$/src/Component/Main_content.css" />
-        <option value="$PROJECT_DIR$/src/Component/Pricing.jsx" />
-        <option value="$PROJECT_DIR$/src/Component/Pricing.css" />
-        <option value="$PROJECT_DIR$/src/Component/About.css" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/Component/Continue.css" />
         <option value="$PROJECT_DIR$/src/index.css" />
-        <option value="$PROJECT_DIR$/src/Component/Continue.jsx" />
         <option value="$PROJECT_DIR$/src/Component/vanta.birds.js" />
+        <option value="$PROJECT_DIR$/src/Component/vanta.dots.js" />
+        <option value="$PROJECT_DIR$/src/Component/SideDrawer/Toolbar.jsx" />
         <option value="$PROJECT_DIR$/src/Component/Options.css" />
+        <option value="$PROJECT_DIR$/src/Component/Continue.jsx" />
         <option value="$PROJECT_DIR$/src/Component/Options.jsx" />
+        <option value="$PROJECT_DIR$/src/Component/Header.jsx" />
+        <option value="$PROJECT_DIR$/src/Component/Header.css" />
+        <option value="$PROJECT_DIR$/src/Component/Main_content.css" />
+        <option value="$PROJECT_DIR$/src/Component/Pricing.css" />
+        <option value="$PROJECT_DIR$/src/Component/Pricing.jsx" />
+        <option value="$PROJECT_DIR$/src/Component/Footer/Footer.jsx" />
+        <option value="$PROJECT_DIR$/src/Component/Pricing/Pricing.jsx" />
+        <option value="$PROJECT_DIR$/src/Component/Routes.jsx" />
+        <option value="$PROJECT_DIR$/src/Component/Sidebar.jsx" />
+        <option value="$PROJECT_DIR$/src/Component/Photography.jsx" />
+        <option value="$PROJECT_DIR$/src/Component/Programming.jsx" />
+        <option value="$PROJECT_DIR$/src/Component/Projects.jsx" />
+        <option value="$PROJECT_DIR$/src/Component/Sidebar.css" />
+        <option value="$PROJECT_DIR$/src/Component/Modal/ModalGallery.css" />
+        <option value="$PROJECT_DIR$/src/Component/About.jsx" />
+        <option value="$PROJECT_DIR$/src/Component/About.css" />
       </list>
     </option>
   </component>
@@ -248,12 +210,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/package.json" />
-      <path value="$PROJECT_DIR$/vanta/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
@@ -307,25 +268,7 @@
               <item name="personal-portfolio-v2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Component" type="462c0819:PsiDirectoryNode" />
-              <item name="vanta.net.js" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="personal-portfolio-v2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-portfolio-v2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Component" type="462c0819:PsiDirectoryNode" />
-              <item name="vanta.rings.js" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="personal-portfolio-v2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-portfolio-v2" type="462c0819:PsiDirectoryNode" />
-              <item name="vanta" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-portfolio-v2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-portfolio-v2" type="462c0819:PsiDirectoryNode" />
-              <item name="vanta" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="Modal" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -349,14 +292,16 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\akash_ze16shp\Desktop\personal-portfolio-v2\src\Component\Pricing" />
+      <recent name="C:\Users\akash_ze16shp\Desktop\personal-portfolio-v2\src" />
+      <recent name="C:\Users\akash_ze16shp\Desktop\personal-portfolio-v2\public\assets" />
+      <recent name="C:\Users\akash_ze16shp\Desktop\personal-portfolio-v2\src\pdf" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\akash_ze16shp\Desktop\personal-portfolio-v2\src\Component" />
       <recent name="C:\Users\akash_ze16shp\Desktop\personal-portfolio-v2\src" />
       <recent name="C:\Users\akash_ze16shp\Desktop\personal-portfolio-v2\public\assets" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\akash_ze16shp\Desktop\personal-portfolio-v2\public\assets" />
-      <recent name="C:\Users\akash_ze16shp\Desktop\personal-portfolio-v2\src\pdf" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -402,18 +347,20 @@
       <workItem from="1565892571547" duration="24755000" />
       <workItem from="1566015230396" duration="35496000" />
       <workItem from="1566280599773" duration="38788000" />
-      <workItem from="1566494172473" duration="6576000" />
+      <workItem from="1566494172473" duration="16616000" />
+      <workItem from="1566594565522" duration="9079000" />
+      <workItem from="1566611753074" duration="9535000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="363784000" />
+    <option name="totallyTimeSpent" value="392438000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13411458" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13411458" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -421,7 +368,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32957748" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32957748" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32957748" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -445,13 +392,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Component/SideDrawer/CloseDrawerButton.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Component/Arrows/Arrow.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -495,13 +435,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/SideDrawer/Toolbar.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="18" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="19" selection-end-column="18" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -511,23 +444,6 @@
     <entry file="file://$PROJECT_DIR$/src/Component/Home.css" />
     <entry file="file://$PROJECT_DIR$/src/Component/Contact.jsx" />
     <entry file="file://$PROJECT_DIR$/src/Component/Contact.css" />
-    <entry file="file://$PROJECT_DIR$/src/Component/Header.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/Routes.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Component/Home.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -543,27 +459,6 @@
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/Modal/ModalGallery.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/Modal/ModalGallery.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="38" column="10" lean-forward="true" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Component/SideDrawer/Toolbar.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -571,93 +466,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/Sidebar.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="234" column="40" selection-start-line="234" selection-start-column="40" selection-end-line="234" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/Sidebar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/Header.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/Footer/Footer.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#199#221#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/About.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="79" column="22" selection-start-line="79" selection-start-column="22" selection-end-line="79" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/Footer/Footer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/Pricing.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/Photography.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2856">
-          <caret line="168" column="29" selection-start-line="168" selection-start-column="29" selection-end-line="168" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/vanta.birds.min.js">
+    <entry file="file://$PROJECT_DIR$/src/Component/vanta.birds.min.js" />
+    <entry file="file://$PROJECT_DIR$/vanta/src/vanta.birds.js" />
+    <entry file="file://$PROJECT_DIR$/src/vanta.rings.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/vanta/src/vanta.birds.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="64" column="27" lean-forward="true" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/vanta.rings.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vanta/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1686" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vanta/index.html" />
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -665,48 +479,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/vanta.rings.js">
+    <entry file="file://$PROJECT_DIR$/src/vanta.rings.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/_base.js">
+    <entry file="file://$PROJECT_DIR$/src/_base.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/helpers.js">
+    <entry file="file://$PROJECT_DIR$/src/helpers.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/Programming.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="160" column="22" selection-start-line="160" selection-start-column="22" selection-end-line="160" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/About.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/Main_content.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/vanta.net.js">
+    <entry file="file://$PROJECT_DIR$/src/vanta.net.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/Continue.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -715,54 +498,198 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/Projects.jsx">
+    <entry file="file://$PROJECT_DIR$/src/Component/vanta.birds.js" />
+    <entry file="file://$PROJECT_DIR$/src/Component/vanta.net.min.js" />
+    <entry file="file://$PROJECT_DIR$/src/Component/vanta.dots.js" />
+    <entry file="file://$PROJECT_DIR$/src/Component/SideDrawer/Toolbar.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="156" column="25" selection-start-line="156" selection-start-column="25" selection-end-line="156" selection-end-column="25" />
+        <state relative-caret-position="323">
+          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/Pricing.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="109" column="27" selection-start-line="109" selection-start-column="27" selection-end-line="109" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Component/Continue.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        <state relative-caret-position="234">
+          <caret line="27" selection-start-line="27" selection-end-line="41" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/vanta.birds.js">
+    <entry file="file://$PROJECT_DIR$/src/Component/Options.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="71" column="35" lean-forward="true" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+        <state relative-caret-position="17">
+          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="48" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/Header.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/Pricing/Pricing.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="39" column="15" lean-forward="true" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/Programming.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="156" column="26" selection-start-line="156" selection-start-column="26" selection-end-line="156" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/Pricing/Pricing.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="103" column="28" lean-forward="true" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/Projects.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="151" column="127" selection-start-line="151" selection-start-column="127" selection-end-line="151" selection-end-column="127" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/Sidebar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="100" selection-start-line="100" selection-end-line="103" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/Modal/ModalGallery.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/Continue.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="6" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Component/Options.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+        <state relative-caret-position="372">
+          <caret line="38" selection-start-line="38" selection-end-line="48" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/vanta.net.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/Options.jsx">
+    <entry file="file://$PROJECT_DIR$/src/Component/Main_content.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/Footer/Footer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="75" selection-start-line="75" selection-end-line="75" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/Header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/About.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/About.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="79" column="13" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/Modal/ModalGallery.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="38" column="10" lean-forward="true" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/Sidebar.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="13" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/Routes.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/Photography.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="168" column="131" lean-forward="true" selection-start-line="168" selection-start-column="32" selection-end-line="168" selection-end-column="131" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/Footer/Footer.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#199#221#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

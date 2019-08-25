@@ -5,6 +5,12 @@ import {Button, Col, Container, Image, Row} from "react-bootstrap";
 import * as THREE from 'three';
 import {Link} from "react-router-dom";
 import Footer from "./Footer/Footer";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome/index.es";
+import {faInstagram} from "@fortawesome/free-brands-svg-icons/faInstagram";
+import {faFilePdf} from "@fortawesome/free-solid-svg-icons/faFilePdf";
+import {faLinkedin} from "@fortawesome/free-brands-svg-icons/faLinkedin";
+import {faGithubSquare} from "@fortawesome/free-brands-svg-icons/faGithubSquare";
+import Pdf from "../../src/pdf/Akash_Rai_Chhabria_2019_01_13.pdf";
 
 class About extends Component {
    /* componentDidMount() {
@@ -44,14 +50,48 @@ class About extends Component {
                 <Container className="About">
                     <Row>
                         <Col>
-                            <h1 className="Title">About me</h1>
+                            <h1 className="Title-about">About me</h1>
                         </Col>
                     </Row>
                     <Row>
                         <Col lg={6}>
-                            <p className="Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum<br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                            <p className="Text">
+                                I am a 4th Computer Science student at Ryerson University in Toronto, Ontario. I consider myself to be an individual who possess both technical knowledge and design theory. My goal is to combine these 2 aspects and present them in all my projects. Currently I am looking for an internship, to work on development projects (website or other) and to help people with their photography needs.
+                                <br />
+                                <br />
+                                My value as a developer is in that not only do I have the technical skills to execute a project, but I also have the design knowledge to create a visually appealing and clean design for your viewership to appreciate. I have worked as a photographer for 3 years, I have experience shooting concerts, events, portraits, and headshots for all sorts of clients. One of them being the Department of Fashion at Ryerson.
+                                <br />
+                                <br />
+                                    I also have other interests besides Photography and Computer Science. I am a big fan of music and have been heavily involved in the Ryerson and Toronto music scene. Working on not only the music side, but also the business of it. When I’m not enjoying some music, you’ll find me working on my fitness, or on my relationships.
+                                <br />
+                                <br />
+                                    I hope we meet soon to talk about your new project ideas!
+                            </p>
                             <h2 className="Text Head">Contact:</h2>
-                            <p className="Text two">For all Inquiries <br /> Please email me at:<br /> <a href="mailto:akashrai10.ar10@gmail.com">akashrai10.ar10@gmail.com</a></p>
+                            <p className="Text two">
+                                For general inquiries and pricing
+                                <br />
+                                Please email me at:
+                                <br />
+                                <a href="mailto:akashrai10.ar10@gmail.com">akashrai10.ar10@gmail.com</a>
+                                <br />
+                                Or find me on the following social media:
+                                <br />
+                                <div className="Social-wrapper">
+                                    <li className="Social-list-about">
+                                        <a href={Pdf} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="far fa-file-pdf" icon={faFilePdf} /></a>
+                                    </li>
+                                    <li className="Social-list-about">
+                                        <a href={"https://www.instagram.com/akashrai_10/"} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="instant fa-fw" icon={faInstagram} /></a>
+                                    </li>
+                                    <li className="Social-list-about">
+                                        <a href={"https://www.linkedin.com/in/akash-chhabria/"} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="fab fa-linkedin" icon={faLinkedin}/></a>
+                                    </li>
+                                    <li className="Social-list-about">
+                                        <a href={"https://github.com/muztank10/"} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="fab fa-github-square" icon={faGithubSquare}/></a>
+                                    </li>
+                                </div>
+                            </p>
                         </Col>
                         <Col lg={6} className="Image-wrap">
                             {/*<div className="Skills">
@@ -69,7 +109,7 @@ class About extends Component {
                             <Image className="About-Akash one" src="assets/Akash_two.JPG"/>
                         </Col>
                     </Row>
-                    <Row className="btn-wrapper-wrap">
+                    <Row className="btn-wrapper-wrap-about">
                         <Col lg={4}/>
                         <Col lg={4} className="btn-wrapper">
                             {/*<Button className="btn" block onClick={this.changeState}>Continue</Button>*/}

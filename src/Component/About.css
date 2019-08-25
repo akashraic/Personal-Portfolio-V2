@@ -4,17 +4,24 @@
     margin:0 0 100px 0;
 }
 
+.Title-about {
+    text-align:center;
+    color: #F5F5F5;
+    margin: 5rem 0 2rem 0;
+}
+
 .About-Akash {
-    width: 80%;
+    width: 100%;
     height: auto;
     margin: 5rem auto;
     padding: 5rem;
     transform: rotate(270deg);
+    border-radius: 40px;
 }
 
 .Text {
     font-size: 22px;
-    padding: 5rem 0;
+    padding: 1rem 0 3rem 0;
     text-align: justify;
     color: #F5F5F5;
     display: inline-block;
@@ -24,11 +31,11 @@
 }
 
 .Head {
-    top: 18em;
+    top: 26em;
 }
 
 .two {
-    top: 21em;
+    top: 29em;
 }
 
 .Title-name {
@@ -36,6 +43,22 @@
     color: #F5F5F5;
     margin-left: 25%;
     padding: 3rem 0;
+}
+
+.Social-list-about a{
+    padding: 1rem 0.5rem;
+    font-size: 32px;
+    color: #F5F5F5;
+}
+
+.Social-list-about a:hover{
+    color: #9a9a9a;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-wrapper-wrap-about {
+    text-align:center;
+    margin: 8rem 0;
 }
 /*
 .Three {
