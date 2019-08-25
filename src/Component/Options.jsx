@@ -51,22 +51,23 @@ class Options extends Component {
     render() {
 
         return (
-            <div className="BG-animation" ref={this.myRef}>
+
             <div className="Options">
+                <div className="BG-animation" ref={this.myRef} />
                 <Header/>
-                <Container className="Categories-wrap">
+                <Container className="Categories-wrap" fluid={true}>
                     <Row className="Categories">
-                        <Col lg={4}>
+                        <Col lg={4} md={4} sm={4} xs={4} className="Categories-col">
                             {/*<Link to="/Photography" onClick={this.handleClickPhoto}><Image src="assets/Photo.png" className="Photography" fluid roundedCircle/></Link>*/}
                             <Link to="/Photography"><Image src="assets/Photo.png" className="Photo" fluid roundedCircle/></Link>
                             <label className="label">Photography</label>
                         </Col>
-                        <Col lg={4}>
+                        <Col lg={4} md={4} sm={4} xs={4} className="Categories-col">
                             {/*<Link to="/Programming" onClick={this.handleClick("prog")}><Image src="assets/Dev.png" className="Programming" fluid roundedCircle/></Link>*/}
                             <Link to="/Programming"><Image src="assets/Dev.png" className="Prog" fluid roundedCircle/></Link>
                             <label className="label">Programming</label>
                         </Col>
-                        <Col lg={4}>
+                        <Col lg={4} md={4} sm={4} xs={4} className="Categories-col">
                             {/*<Link to="/Projects" onClick={this.handleClick("proj")}><Image src="assets/Other.png" className="Other" fluid roundedCircle/></Link>*/}
                             <Link to="/Projects" ><Image src="assets/Other.png" className="Other" fluid roundedCircle/></Link>
                             <label className="label" id="project">Project Management</label>
@@ -75,7 +76,7 @@ class Options extends Component {
 
                </Container>
             </div>
-            </div>
+
         );
     }
 }

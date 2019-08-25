@@ -3,32 +3,27 @@
 }
 
 .Categories-wrap{
-    width: 60%;
+    width: 55%;
     height: auto;
-}
-
-
-.Photo, .Prog, .Other {
-
 }
 
 .Categories img{
     width: 100%;
     height: auto;
     padding-bottom:5%;
+    display:flex;
+    flex-direction: row;
 }
 
 .label{
     text-align: center;
     font-size: 40px;
-    margin: 0 0 0 5%;
+    margin: 0 10% 0 5%;
     Display: none;
 }
 
 #project{
-    margin: 0;
-    text-align: left;
-    font-size: 32.5px;
+    margin:auto;
 }
 
 a:hover + label{
@@ -40,10 +35,68 @@ a:hover + label{
     position:fixed;
     padding:0;
     margin:0;
-
     top:0;
     left:0;
-
     width: 100%;
     height: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .Categories-wrap {
+        width:auto;
+    }
+}
+
+@media screen and (min-width: 378px) and (max-width: 768px) {
+
+    .Categories-wrap {
+        width:100%;
+    }
+
+    .Categories {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .label {
+        font-size: 12px;
+        margin: 0;
+        Display: block;
+    }
+
+    #project{
+        text-align: center;
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 378px) {
+
+    .Categories-wrap {
+        width:100%;
+    }
+
+    .Categories {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .label {
+        font-size: 12px;
+        margin: 0;
+        Display: block;
+    }
+
+    #project{
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .Categories-col img.Other{
+        width: 75%;
+    }
+
+
+
 }

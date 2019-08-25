@@ -44,8 +44,8 @@ class Continue extends Component {
 
     render() {
         return (
-            <div ref={this.myRef} className="BG-animation">
             <div className="Continue">
+                <div ref={this.myRef} className="BG-animation" />
                 <Header/>
                 <Container>
                     <Row className="btn-wrapper-wrap">
@@ -57,7 +57,6 @@ class Continue extends Component {
                         <Col lg={4}/>
                     </Row>
                 </Container>
-            </div>
             </div>
         );
     }
