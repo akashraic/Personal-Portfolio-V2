@@ -22,4 +22,23 @@
     background: #F5F5F5;
 }
 
+@media screen and (min-width: 378px) and (max-width: 768px) {
+    .Toggle-btn {
+        height: 20px;
+        width:32px;
+        margin-top: 0;
+    }
+}
 
+@media screen and (max-width: 378px) {
+
+    .Toggle-btn {
+        height: 20px;
+        width:32px;
+        margin-top: 0;
+    }
+
+    .Toggle-btn-line {
+        width:26px;
+    }
+}

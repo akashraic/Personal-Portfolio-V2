@@ -1,10 +1,6 @@
 import React, {Component} from 'react';
 import {Link } from "react-router-dom";
 import './Sidebar.css';
-import Home from './Home.jsx';
-import {Route} from "react-router";
-import Photography from "./Photography";
-import Options from "./Options";
 import CloseDrawerButton from "./SideDrawer/CloseDrawerButton";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome/index.es";
 import {faInstagram} from "@fortawesome/free-brands-svg-icons/faInstagram";
