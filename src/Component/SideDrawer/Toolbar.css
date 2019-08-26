@@ -71,6 +71,10 @@
         font-size: 1.7rem;
     }
 
+    .Toolbar-nav-items {
+        padding: 0 0.5rem;
+    }
+
 }
 
 @media screen and (max-width: 378px) {
@@ -80,7 +84,11 @@
     }
 
     .Toolbar-logo a{
-        margin-left: 0rem;
+        margin-left: 0;
         font-size: 12px;
+    }
+
+    .Toolbar-nav-items {
+        padding: 0 0.5rem;
     }
 }

@@ -9,8 +9,8 @@ class Foot extends Component {
             <div className="Foot fixed-bottom">
                     {/*contains the LLC code and the terms link*/}
                     <Row className="footer">
-                        <Col md={4} sm={3} />
-                        <Col md={4} sm={6} className="foot">
+                        <Col lg={4} md={4} sm={4} />
+                        <Col lg={4} md={4} sm={4} className="Foot">
                             {/*this code retrieves the year and updates it automatically*/}
                             <ul className="Foot-list list-unstyled horizontal">
                                 <li><Link to="/" className="link">Home</Link></li>
@@ -20,9 +20,9 @@ class Foot extends Component {
                                 {/*<li><Link to="/Pricing" className="link">Pricing</Link></li>*/}
                                 <li><Link to="/About" className="link">About me</Link></li>
                             </ul>
-                            <h5 className="footer-copyright developer-copyright">&copy; {(new Date().getFullYear())} Akash Rai Chhabria</h5>
+                            <h5 className="footer-copyright">&copy; {(new Date().getFullYear())} Akash Rai Chhabria</h5>
                         </Col>
-                        <Col md={4} sm={3} />
+                        <Col lg={4} md={4} sm={4} />
                     </Row>
             </div>
         )
