@@ -137,7 +137,7 @@ class Programming extends Component {
                 <Toolbar
                     drawerClick={this.drawerToggleClickHandler}
                     path={this.childHandler}/>
-                <Container className="Programming">
+                <Container className="Programming" fluid>
                     <Row className="Image-and-sidebar">
                         <Col className="Sidebar-area">
                             <Sidebar
