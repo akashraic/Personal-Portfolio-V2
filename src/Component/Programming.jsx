@@ -28,7 +28,6 @@ class Programming extends Component {
 
         this.childHandler = this.childHandler.bind(this);
 
-        console.log(this.state.fire_path)
     }
 
     drawerToggleClickHandler = () => {
@@ -44,7 +43,7 @@ class Programming extends Component {
         this.setState({
             fire_path: dataFromChild,
             image: ""
-        },() => console.log('Updated Parent State:', this.state));
+        });
     }
 
     descriptionUpdater = (description, github, web, features, tech, duration) => {
@@ -56,7 +55,6 @@ class Programming extends Component {
             techStack: tech,
             time: duration,
         });
-        console.log(this.state.desc)
     };
 
     backdropClickHandler = () => {

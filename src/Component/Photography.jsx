@@ -26,10 +26,6 @@ class Photography extends Component {
                 photoID: -1
             };
 
-            console.log("Photo ID" + this.state.photoID);
-            console.log(this.state.option);
-            console.log(this.state.fire_path);
-
             this.childHandler = this.childHandler.bind(this);
             this.previousSlide = this.previousSlide.bind(this);
             this.nextSlide = this.nextSlide.bind(this);
@@ -81,7 +77,7 @@ class Photography extends Component {
             this.setState({
                 fire_path: dataFromChild,
                 fileURL: []
-            },() => console.log('Updated Parent State:', this.state));
+            });
         }
 
         componentDidMount() {
@@ -124,8 +120,6 @@ class Photography extends Component {
             // chunk the products into the array of columns
             const imgCols = cols.map((col, num) => this.state.fileURL.slice(num * 4, num * 4 + 4) );
             let photoNum =  Array.from(Array(path).keys());
-            console.log(photoNum);
-            console.log(this.state.photoID);
             // if (colNum>0){ photoNum += 4}
             // Map the rows as div.row
             const imgURL = imgCols.map((col, num) => (
@@ -134,9 +128,6 @@ class Photography extends Component {
                     {col.map( (url, index) => <Image className="Photo-Images" key={photoNum[index+(4*num)]} src={url} onClick={() => this.toggleModal(photoNum[index+(4*num)])} />)}
                 </Col>
             ));
-
-            console.log(this.state.fileURL);
-            console.log("Photo ID" + this.state.photoID);
 
             let backdrop;
 
