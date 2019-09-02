@@ -151,7 +151,8 @@ class Programming extends Component {
                     <Row className="btn-wrapper-wrap">
                         <Col lg={4}/>
                         <Col lg={4} className="btn-wrapper">
-                            <Link to='/About' className={"anchor"}><Button className="btn" block>Learn About me</Button></Link>
+                            {/*<Button className="btn" block onClick={this.changeState}>Continue</Button>*/}
+                            <Button className="btn" block onClick={this.buttonClickHandler}>Show More</Button>
                         </Col>
                         <Col lg={4}/>
                     </Row>

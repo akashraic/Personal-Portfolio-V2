@@ -176,35 +176,35 @@ class Sidebar extends Component {
                     <ul className="nav-list">
                         <div className="sm-wrapper">
                         {routes.filter(routes => routes.option === this.props.choice).map((route, index) => (
-                        <li className="list" >
+                        <li className="list"
+                            onClick={() => {
+                                this.props.action(route.fire_path);
+                                if(this.props.description){
+                                    this.props.description(
+                                        route.description,
+                                        route.git,
+                                        route.website,
+                                        route.specs,
+                                        route.techStack,
+                                        route.time)
+                                }
+                                else if(this.props.project) {
+                                    this.props.project(
+                                        route.description,
+                                        route.webLink,
+                                        route.Resp,
+                                        route.Accomp,
+                                        route.time,
+                                        route.linkLabel,
+                                        route.relLinks)
+                                }
+                                this.props.hide()
+                            }}>
                             <Link
                                 key={index}
                                 to={route.path}
                                 className="list-anchor"
-                                onClick={() => {
-                                    this.props.action(route.fire_path);
-                                    if(this.props.description){
-                                        this.props.description(
-                                            route.description,
-                                            route.git,
-                                            route.website,
-                                            route.specs,
-                                            route.techStack,
-                                            route.time)
-                                    }
-                                    else if(this.props.project) {
-                                        this.props.project(
-                                            route.description,
-                                            route.webLink,
-                                            route.Resp,
-                                            route.Accomp,
-                                            route.time,
-                                            route.linkLabel,
-                                            route.relLinks)
-                                    }
-                                    this.props.hide()
-                                }}
-                            >{route.label} </Link>
+                            >{route.label}</Link>
                         </li>
                         ))}
                         </div>
