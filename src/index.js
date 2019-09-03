@@ -8,13 +8,13 @@ import * as firebase from 'firebase';
 
 // Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDSLVUMdP-T7PO2wRgJnkPNAV5Z4Ex8Ggw",
-    authDomain: "personal-website-2ed16.firebaseapp.com",
-    databaseURL: "https://personal-website-2ed16.firebaseio.com",
-    projectId: "personal-website-2ed16",
-    storageBucket: "personal-website-2ed16.appspot.com",
-    messagingSenderId: "214964570165",
-    appId: "1:214964570165:web:e283104ed3cf521e"
+    apiKey: "INSERT_API_KEY_HERE",
+    authDomain: "your-domain.firebaseapp.com",
+    databaseURL: "https://your-domain.firebaseio.com",
+    projectId: "your-domain",
+    storageBucket: "your-domain.appspot.com",
+    messagingSenderId: "Random-numbers",
+    appId: "Random-key"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
