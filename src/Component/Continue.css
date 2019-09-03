@@ -1,16 +1,20 @@
+/*Sets entire page height to 100%*/
 .Continue {
     height:100%;
 }
 
+/*Styling for button column wrapper*/
 .btn-wrapper {
     margin: 0 auto;
     text-align:center;
 }
 
+/*Sets margin for button row wrapper*/
 .btn-wrapper-wrap {
     margin: 3rem 0;
 }
 
+/*Styling button itself*/
 .btn{
     display: inline-block;
     font-family: 'Orbitron', sans-serif;
@@ -23,6 +27,7 @@
     color: #F5F5F5;
 }
 
+/*Changes button colour on hover*/
 .btn:hover{
     background-color: #F5F5F5;
     color: #2a2c2f;

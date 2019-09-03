@@ -1,3 +1,4 @@
+/*Styling for close button*/
 .Close-btn {
     display: flex;
     flex-direction: column;
@@ -15,10 +16,12 @@
     right: 16px;
 }
 
+/*Prevent outline when close button is clicked*/
 .Close-btn:focus {
     outline:none;
 }
 
+/*Styling for each line that makes the close button*/
 .Close-btn-line{
     opacity: 0.5;
     width: 30px;
@@ -26,10 +29,12 @@
     background: #F5F5F5;
 }
 
+/*Rotation for the first line used in the close button*/
 .btn1 {
     transform: translateY(12px) rotate(45deg);
 }
 
+/*Rotation for the second line used in the close button*/
 .btn2 {
     transform: rotate(-45deg);
 }

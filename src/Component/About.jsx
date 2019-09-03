@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+/*Component for About page of the website*/
 
+import React, {Component} from 'react';
 import './About.css';
 import {Button, Col, Container, Image, Row} from "react-bootstrap";
-import * as THREE from 'three';
 import {Link} from "react-router-dom";
 import Footer from "./Footer/Footer";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome/index.es";
@@ -10,40 +10,9 @@ import {faInstagram} from "@fortawesome/free-brands-svg-icons/faInstagram";
 import {faFilePdf} from "@fortawesome/free-solid-svg-icons/faFilePdf";
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import {faGithubSquare} from "@fortawesome/free-brands-svg-icons/faGithubSquare";
-import Pdf from "../../src/pdf/Akash_Rai_Chhabria_2019_01_13.pdf";
+import Pdf from "../Resume/Akash_Rai_Chhabria_2019_01_13.pdf";
 
 class About extends Component {
-    /* componentDidMount() {
-         const scene = new THREE.Scene();
-         scene.background = new THREE.Color(0x2a2c2f);
-         const camera = new THREE.PerspectiveCamera(
-             75,
-             window.innerWidth / window.innerHeight,
-             0.1,
-             1000
-         );
-         const renderer = new THREE.WebGLRenderer();
-         renderer.setSize(window.innerWidth/2, window.innerHeight/2);
-         this.mount.appendChild(renderer.domElement);
-
-         const geometry = new THREE.DodecahedronBufferGeometry(3, 0);
-         const material = new THREE.MeshBasicMaterial({ color: 0xFFFF });
-         const cube = new THREE.Mesh(geometry, material);
-         scene.add(cube);
-
-         camera.position.z = 5;
-
-         const animate = function() {
-             requestAnimationFrame(animate);
-
-             cube.rotation.x += 0.01;
-             cube.rotation.y += 0.01;
-
-             renderer.render(scene, camera);
-         };
-
-         animate();
-     }*/
     render(){
         return(
             <div className="About-wrap">
@@ -53,6 +22,7 @@ class About extends Component {
                             <h1 className="Title-about">About me</h1>
                         </Col>
                     </Row>
+                    {/*Text*/}
                     <Row className="Image-and-text">
                         <Col xs={12} sm={12} md={12} lg={6} className="Image-wrap">
                             <Image className="About-Akash one" src="assets/Akash_two.JPG"/>
@@ -63,8 +33,8 @@ class About extends Component {
                             <p className="Text"> I also have other interests besides Photography and Computer Science. I am a big fan of music and have been heavily involved in the Ryerson and Toronto music scene. Working on not only the music side, but also the business of it. When I’m not enjoying some music, you’ll find me working on my fitness, or on my relationships. </p>
                             <p className="Text"> I hope we meet soon to talk about your new project ideas! </p>
                             <div>
-                               <h2 className="Contact-title">Contact:</h2>
-                               <p className="Info-text">
+                                <h2 className="Contact-title">Contact:</h2>
+                                <p className="Info-text">
                                     For general inquiries and pricing
                                     <br />
                                     Please email me at:
@@ -73,7 +43,8 @@ class About extends Component {
                                     <br />
                                     Or find me on the following social media:
                                 </p>
-                               <div className="Social-wrap">
+                                {/*Social media*/}
+                                <div className="Social-wrap">
                                     <li className="Social-list-about">
                                         <a href={Pdf} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="far fa-file-pdf" icon={faFilePdf} /></a>
                                     </li>
@@ -87,14 +58,13 @@ class About extends Component {
                                         <a href={"https://github.com/muztank10/"} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="fab fa-github-square" icon={faGithubSquare}/></a>
                                     </li>
                                 </div>
-                           </div>
+                            </div>
                         </Col>
                     </Row>
-
+                    {/*Return Home button*/}
                     <Row className="btn-wrapper-wrap-about">
                         <Col lg={4}/>
                         <Col lg={4} className="btn-wrapper">
-                            {/*<Button className="btn" block onClick={this.changeState}>Continue</Button>*/}
                             <Link to='/' className={"anchor"}><Button className="btn" block>Return Home</Button></Link>
                         </Col>
                         <Col lg={4}/>

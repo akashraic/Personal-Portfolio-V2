@@ -1,7 +1,4 @@
-.Sidebar-wrap {
-    display: flex;
-}
-
+/*Styling for sidebar and animation for sidebar opening and closing*/
 .Sidebar {
     height:100%;
     background:#191b1e;
@@ -16,20 +13,9 @@
     transition: transform 0.3s ease-out;
 }
 
+/*Styling for entire list of items in sidebar*/
 .nav-list{
     padding:0.5rem;
-}
-
-.sm-wrapper {
-    /*display: flex;*/
-    margin-top: 30px;
-}
-
-.Sidebar.open {
-    transform: translateX(0);
-}
-
-.Sidebar .nav-list {
     height:100%;
     list-style: none;
     display:flex;
@@ -37,6 +23,17 @@
     justify-content:center;
 }
 
+/*Styling for wrapper of upper content list*/
+.sm-wrapper {
+    /*display: flex;*/
+    margin-top: 30px;
+}
+
+/*Styling to open to sidebar*/
+.Sidebar.open {
+    transform: translateX(0);
+}
+/*Styling for each individual item in the upper list*/
 .list {
     list-style: none;
     width:100%;
@@ -47,10 +44,12 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
 }
 
+/*Styling for lower list wrapper*/
 .Lower-list-wrapper {
     margin: 2rem 0;
 }
 
+/*Styling for each individual lower list item*/
 .Lower-list {
     list-style: none;
     width:100%;
@@ -60,31 +59,37 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
 }
 
+/*Changes lower list item colour on hover*/
 .Lower-list .list-anchor:hover {
     color: #9a9a9a;
     transition: 0.3s;
 }
 
+/*Styling for all anchor tags in the sidebar component*/
 .Sidebar .list-anchor {
     color: #F5F5F5;
     text-decoration:none;
     font-size:1.75rem;
 }
 
+/*styling for all upper list items in the component*/
 .Sidebar .list {
     margin:1.5rem 0;
 }
 
+/*inverses current background colour of list on hover*/
 .list:hover {
     background: #F5F5F5;
     transition: 0.3s;
 }
 
+/*inverses current colour of list anchor on hover*/
 .list:hover .list-anchor {
     color: #2a2c2f;
     transition: 0.3s;
 }
 
+/*Styling for social media wrapper*/
 .Social-wrapper {
     display:flex;
     padding: 1.5rem 1rem;
@@ -92,12 +97,15 @@
     width:100%;
     list-style: none;
 }
+
+/*Styling for each anchor tag in the social media list*/
 .Social-list a{
     padding: 1rem 0.5rem;
     font-size: 26px;
     color: #F5F5F5;
 }
 
+/*changes colour and animates each social media icon on hover*/
 .Social-list a:hover{
     color: #9a9a9a;
     transition: 0.3s ease-in-out;

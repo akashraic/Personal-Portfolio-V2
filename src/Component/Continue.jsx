@@ -1,30 +1,17 @@
+/*Component for home page of website, Uses Vanta.js Integration*/
+
 import React, {Component} from 'react';
 import {Container, Row, Col, Button} from 'react-bootstrap';
 import './Home.jsx'
 import './Continue.css';
 import {Link} from "react-router-dom";
 import Header from "./Header";
-import * as THREE from 'three';
-import NET from '../vanta.net.js';
+import NET from '../Vanta/vanta.net.js';
 
 
 class Continue extends Component {
 
-    /*    constructor(props) {
-            super(props);
-
-            this.state = {
-                cont: false
-            };
-
-            this.changeState = this.changeState.bind(this)
-        }
-
-        changeState() {
-            this.props.choice(this.state.cont);
-            console.log()
-        }*/
-
+    /*All methods for Vanta.js Integration*/
     constructor() {
         super();
         this.myRef = React.createRef()
@@ -41,17 +28,17 @@ class Continue extends Component {
         if (this.effect) this.effect.destroy()
     }
 
-
     render() {
         return (
             <div className="Continue">
+                {/*div for Vanta.js*/}
                 <div ref={this.myRef} className="BG-animation" />
+                {/*Calls title Component*/}
                 <Header/>
                 <Container>
                     <Row className="btn-wrapper-wrap">
                         <Col lg={4}/>
                         <Col lg={4} className="btn-wrapper">
-                            {/*<Button className="btn" block onClick={this.changeState}>Continue</Button>*/}
                             <Link to='/Options' className={"anchor"}><Button className="btn" block>Continue</Button></Link>
                         </Col>
                         <Col lg={4}/>

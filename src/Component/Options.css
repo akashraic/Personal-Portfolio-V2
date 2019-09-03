@@ -1,12 +1,15 @@
+/*Sets height of component to 100% of body*/
 .Options{
     height:100%;
 }
 
+/*sets custom size for component container*/
 .Categories-wrap{
     width: 55%;
     height: auto;
 }
 
+/*Styling for each individual image in the container*/
 .Categories img{
     width: 100%;
     height: auto;
@@ -15,6 +18,7 @@
     flex-direction: row;
 }
 
+/*Styles label for each image and sets it invisible*/
 .label{
     text-align: center;
     font-size: 40px;
@@ -22,15 +26,17 @@
     Display: none;
 }
 
-#project{
-    margin:auto;
-}
-
+/*Shows label only when the image is hovered on*/
 a:hover + label{
     display:block;
 }
 
-/*code to cover the entire web page*/
+/*Custom margin for project label*/
+#project{
+    margin:auto;
+}
+
+/*code to cover Vanta.js animation to the entire web page*/
 .BG-animation {
     position:fixed;
     padding:0;
@@ -41,6 +47,7 @@ a:hover + label{
     height: 100%;
 }
 
+/*Responsive design*/
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .Categories-wrap {
         width:auto;

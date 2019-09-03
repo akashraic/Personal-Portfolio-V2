@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
 import * as firebase from 'firebase';
 
-// Your web app's Firebase configuration
+// Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyDSLVUMdP-T7PO2wRgJnkPNAV5Z4Ex8Ggw",
     authDomain: "personal-website-2ed16.firebaseapp.com",
@@ -20,13 +20,6 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('root'));
-
-/*Amplify.configure(awsExports);
-Amplify.configure(config);
-Storage.configure(config);*/
-
-
-
 
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA

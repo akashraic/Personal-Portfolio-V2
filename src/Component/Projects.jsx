@@ -1,3 +1,6 @@
+/*Component for Projects section of website, Contains sidebar,
+* pictures, and modal gallery view. */
+
 import React, {Component} from 'react';
 import {Container, Row, Col, Image, Button} from 'react-bootstrap';
 import './Main_content.css';
@@ -8,46 +11,57 @@ import * as firebase from 'firebase';
 import {Link} from "react-router-dom";
 import Footer from "./Footer/Footer";
 
-
 class Projects extends Component {
+    /*Initializes state to default values*/
     constructor(props) {
         super(props);
 
         this.state = {
+            //identifies what section of the website
             option: "Proj",
+            //used to open or close the sidebar
             sideDrawerOpen: false,
+            //Path for firebase folder that contains pictures
             fire_path: ' ',
+            //picture retrieved from firebase storage
             pic: ' ',
+            //random boolean to stop image retrial after one iteration
             bool: true,
+            //General description of project
             desc: " ",
+            //Website to project
             webLink: " ",
+            //Responsibilities in the project
             Resp: " ",
+            // Accomplishments achieved during the project
             Accomp: " ",
+            //Time line for project
             time: " ",
+            //Label for related
             linkLabel: " ",
+            //URL to related links
             relLinks: " "
-
         };
-
         this.childHandler = this.childHandler.bind(this);
     }
 
+    //Method to open sidebar or close sidebar through hamburger menu
     drawerToggleClickHandler = () => {
         this.setState((prevState) => {
             return{sideDrawerOpen: !prevState.sideDrawerOpen}
         });
     };
 
+    // resets the firebase path, the array of pictures and the boolean value
     childHandler(dataFromChild) {
-        // log our state before and after we updated it
-        this.state.bool = true;
-        // console.log('%cPrevious Parent State: ' + JSON.stringify(this.state), "color:orange");
         this.setState({
             fire_path: dataFromChild,
-            image: ""
-        },() => console.log('Updated Parent State:', this.state));
+            image: "",
+            bool:true
+        });
     }
 
+    //Pulls information from Sidebar.jsx's Routes array for the specific project and displays it in this component
     projectUpdater = (Description, Website, Responsibilities, Accomplishments, Timeline, Label, relatedLinks) => {
         this.setState({
             desc: Description,
@@ -58,13 +72,23 @@ class Projects extends Component {
             linkLabel: Label,
             relLinks: relatedLinks
         });
-        console.log(this.state.desc)
     };
 
+    //Method to open sidebar through a button
+    buttonClickHandler = () => {
+        this.setState({sideDrawerOpen: true});
+    };
+
+    //Method to close sidebar when outside space is clicked on
     backdropClickHandler = () => {
         this.setState({sideDrawerOpen: false});
     };
 
+    /*This code runs every time there is an update in state( in this case,
+    * fire_path) it creates a reference to the firebase storage and
+    * lists the file from the specific storage folder. Then it
+    * gets its url which is later added to the src tag of images.
+    * Bool value is set to false to prevent infinite storage retrieval*/
     componentDidUpdate() {
         if (this.state.bool) {
             // Get a reference to the storage service, which is used to create references in your storage bucket
@@ -86,9 +110,9 @@ class Projects extends Component {
         let Weblabel;
         let body;
 
+        //Backdrop is only called when Sidedrawer is open
         if(this.state.sideDrawerOpen) {backdrop = <Backdrop click={this.backdropClickHandler}/>;}
-        if(this.state.fire_path === "Programming/Drone.png") {Weblabel = "None"}
-        else { Weblabel = "Here"}
+        //Content for empty firebase path
         if(this.state.fire_path === " ") {
             body =
                 (<div className="Info-wrapper">
@@ -106,10 +130,11 @@ class Projects extends Component {
                             be sure to contact me. You can find my list of projects by clicking the side
                             menu button. To come back to this page, click on "Programming" in the navigation bar
                             above. If any of projects are of interest to you, then please do not hesitate
-                            to <Link to="#">contact</Link> me for more information
+                            to <Link to="/About">contact</Link> me for more information
                         </p>
                     </Row>
                 </div>); }
+        // Content for non empty firebase path
         else {
             body =
                 (<div>
@@ -118,6 +143,7 @@ class Projects extends Component {
                             <Image className="Promo-image" src={this.state.pic} />
                         </div>
                     </Row>
+                    {/*populated through values from the updater method*/}
                     <Row className="Info-wrap">
                         <h1 className="Title">Project Description</h1>
                         <p className="Text-description">{this.state.desc}</p>
@@ -130,31 +156,36 @@ class Projects extends Component {
                 </div>); }
         return (
             <div className="Projects-wrap">
+                {/*Toolbar called with hamburger menu handler and path updater*/}
                 <Toolbar
                     drawerClick={this.drawerToggleClickHandler}
                     path={this.childHandler}/>
                 <Container className="Projects">
                     <Row className="Image-and-sidebar">
                         <Col className="Sidebar-area">
+                            {/*Sidebar called with section indicator, path updater,
+                            Project updater, sidebar toggler and sidebar opener*/}
                             <Sidebar
                                 choice={this.state.option}
                                 action={this.childHandler}
                                 show={this.state.sideDrawerOpen}
                                 hide={this.drawerToggleClickHandler}
                                 project = {this.projectUpdater}/>
+                            {/*backdrop called*/}
                             {backdrop}
                         </Col>
                     </Row>
+                    {/*content based on firebase path called*/}
                     {body}
                     <Row className="btn-wrapper-wrap">
                         <Col lg={4}/>
                         <Col lg={4} className="btn-wrapper">
-                            {/*<Button className="btn" block onClick={this.changeState}>Continue</Button>*/}
                             <Button className="btn" block onClick={this.buttonClickHandler}>Show More</Button>
                         </Col>
                         <Col lg={4}/>
                     </Row>
                 </Container>
+                {/*Footer called here*/}
                 <Footer/>
             </div>
         );

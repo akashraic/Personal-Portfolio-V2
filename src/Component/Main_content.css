@@ -1,21 +1,26 @@
+/*Styling for Projects and Programming Container*/
 .Programming, .Projects{
     width:100%;
     height: auto;
+    /*margin to accommodate for footer and Toolbar*/
     margin:50px 0 120px 0;
     padding:0;
 }
 
+/*Styling for Title*/
 .Title {
     text-align:center;
     color: #F5F5F5;
     margin: 5rem 0 0 0;
 }
 
+/*Styling for sidebar section*/
 .Sidebar-area {
     margin:auto;
     padding:0;
 }
 
+/*Determines columns for image gallery in photography component*/
 .Images {
     line-height: 0;
     -webkit-column-count: 5;
@@ -27,48 +32,53 @@
     margin-top:60px;
 }
 
+/*Determines size for each photo in the gallery*/
 .Photo-Images {
     width: 100% !important;
     height: auto !important;
+    vertical-align: middle;
+    padding: 0.5rem 0.5rem;
 }
 
+/*Styling on hover for each image in photography component*/
 .Photo-Images:hover{
     transform: scale(1.05);
     transition: 0.3s ease-in-out;
 }
 
+/*Styling for Row that contains image and sidebar*/
 .Image-and-sidebar {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
 }
 
+/*Styling for Column that contains images*/
 .Image-container {
     flex: 50%;
     padding: 0 4px;
 }
 
-.Image-container .Photo-Images{
-    vertical-align: middle;
-    padding: 0.5rem 0.5rem;
-}
-
+/*Styling for image gallery wrap*/
 .Photography-wrap{
     padding-right: 0;
     padding-left: 0;
     margin: 0 0 120px 0;
 }
 
+/*Sets margin for image and sidebar*/
 .Title-row, .Image-and-sidebar {
     margin-left: 0;
     margin-right: 0;
 }
 
+/*sets margin for image container*/
 .Title-col, .Image-container {
     padding-left: 0;
     padding-right: 0;
 }
 
+/*Styling for images shown to display projects in Programming and Project components*/
 .Promo-image-wrap, .Info-wrap {
     width: 80%;
     height: 80%;
@@ -77,13 +87,14 @@
     background: #191b1e;
 }
 
+/*Styling for wrap of promo image*/
 .Image-wrap .Promo-image{
     max-width: 100%;
     max-height: 100%;
     height: auto
 }
 
-
+/*styling for specific tall images*/
 .Image-wrap .Promo-image-tall{
     display: block;
     margin-left: auto;
@@ -91,6 +102,7 @@
     width: 50%;
 }
 
+/*Styling for wrap that contains description*/
 .Info-wrap {
     width: 80%;
     height: 80%;
@@ -100,22 +112,18 @@
     color: #F5F5F5;
 }
 
+/*Styling for description*/
 .Text-description {
     font-size: 22px;
     padding: 3rem 0;
-    /*text-align: justify;*/
-
-
 }
 
-.Extra-info {
-    /*text-align:justify;*/
-
-}
-
+/*Styling for wrapper of wrap that contains description*/
 .Info-wrapper {
     margin: 5rem 0;
 }
+
+/*Responsive styling*/
 
 @media screen and (min-width: 1366px) and (max-width: 1600px) {
 

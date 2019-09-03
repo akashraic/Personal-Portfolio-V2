@@ -1,3 +1,8 @@
+/*Component to be used as a side bar for more information
+* this sidebar has the ability to change its content
+* based on the section it is in and contains the information
+* to be displayed on the screen*/
+
 import React, {Component} from 'react';
 import {Link } from "react-router-dom";
 import './Sidebar.css';
@@ -7,13 +12,11 @@ import {faInstagram} from "@fortawesome/free-brands-svg-icons/faInstagram";
 import {faFilePdf} from "@fortawesome/free-solid-svg-icons/faFilePdf";
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import {faGithubSquare} from "@fortawesome/free-brands-svg-icons/faGithubSquare";
-import Pdf from "../../src/pdf/Akash_Rai_Chhabria_2019_01_13.pdf";
+import Pdf from "../Resume/Akash_Rai_Chhabria_2019_01_13.pdf";
 
-
-// Each logical "route" has two components, one for
-// the sidebar and one for the main area. We want to
-// render both of them in different places when the
-// path matches the current URL.
+/*An array of the different options, where they belong, their route,
+* their path in firebase, and (depending on the section) project description
+* and specifics*/
 const routes = [
     {
         label: "Cars",
@@ -156,81 +159,97 @@ const routes = [
 
 class Sidebar extends Component {
 
-        constructor(props) {
-            super(props);
+    /*Constructor initializes deciding factors for sidebar content to
+    empty string*/
+    constructor(props) {
+        super(props);
 
-            this.state = {
-                option: " ",
-                choice: " ",
-                action: " ",
-            };
-        }
+        this.state = {
+            option: " ",
+            choice: " ",
+            action: " ",
+        };
+    }
     render() {
-            let drawerClasses = 'Sidebar';
-            if(this.props.show) {
-                drawerClasses = 'Sidebar open';
-            }
+        //Determines CSS for sidebar depending on whether it is open or not
+        let drawerClasses = 'Sidebar';
+        if(this.props.show) {
+            drawerClasses = 'Sidebar open';
+        }
         return (
-                <div className={drawerClasses}>
-                    <div><CloseDrawerButton close={this.props.hide}/></div>
-                    <ul className="nav-list">
-                        <div className="sm-wrapper">
+            <div className={drawerClasses}>
+                {/*closes sidebar when clicked*/}
+                <div><CloseDrawerButton close={this.props.hide}/></div>
+                <ul className="nav-list">
+                    <div className="sm-wrapper">
+                        {/*filters and displays content of sidebar based on option in routes array
+                        and the state set by the route (this.props.choice)*/}
                         {routes.filter(routes => routes.option === this.props.choice).map((route, index) => (
-                        <li className="list"
-                            onClick={() => {
-                                this.props.action(route.fire_path);
-                                if(this.props.description){
-                                    this.props.description(
-                                        route.description,
-                                        route.git,
-                                        route.website,
-                                        route.specs,
-                                        route.techStack,
-                                        route.time)
-                                }
-                                else if(this.props.project) {
-                                    this.props.project(
-                                        route.description,
-                                        route.webLink,
-                                        route.Resp,
-                                        route.Accomp,
-                                        route.time,
-                                        route.linkLabel,
-                                        route.relLinks)
-                                }
-                                this.props.hide()
-                            }}>
-                            <Link
-                                key={index}
-                                to={route.path}
-                                className="list-anchor"
-                            >{route.label}</Link>
-                        </li>
+                            /*determines what path is being used for the photo and
+                            if props "description" is present in the parent component
+                            then sidebar populates the parent with the content in the
+                            routes array*/
+                            <li className="list"
+                                onClick={() => {
+                                    this.props.action(route.fire_path);
+                                    if(this.props.description){
+                                        this.props.description(
+                                            route.description,
+                                            route.git,
+                                            route.website,
+                                            route.specs,
+                                            route.techStack,
+                                            route.time)
+                                    }
+                                    /*if props "Project" is present in the parent component
+                                    then sidebar populates the parent with the content in the
+                                    routes array*/
+                                    else if(this.props.project) {
+                                        this.props.project(
+                                            route.description,
+                                            route.webLink,
+                                            route.Resp,
+                                            route.Accomp,
+                                            route.time,
+                                            route.linkLabel,
+                                            route.relLinks)
+                                    }
+                                    //hides sidebar on selection of content from sidebar
+                                    this.props.hide()
+                                }}>
+                                {/*Link obtains route path from the routes array*/}
+                                <Link
+                                    key={index}
+                                    to={route.path}
+                                    className="list-anchor"
+                                >{route.label}</Link>
+                            </li>
                         ))}
-                        </div>
-                        <div className="spacer"/>
-                        <div className="Lower-list-wrapper">
-                            <li className="Lower-list">
-                                <Link to="/About" className="list-anchor">About Me</Link>
-                            </li>
-                        </div>
+                    </div>
+                    {/*creates space between main sidebar content and supplementary content*/}
+                    <div className="spacer"/>
+                    <div className="Lower-list-wrapper">
+                        <li className="Lower-list">
+                            <Link to="/About" className="list-anchor">About Me</Link>
+                        </li>
+                    </div>
 
-                        <div className="Social-wrapper">
-                            <li className="Social-list">
-                                <a href={Pdf} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="far fa-file-pdf" icon={faFilePdf} /></a>
-                            </li>
-                            <li className="Social-list">
-                                <a href={"https://www.instagram.com/akashrai_10/"} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="instant fa-fw" icon={faInstagram} /></a>
-                            </li>
-                            <li className="Social-list">
-                                <a href={"https://www.linkedin.com/in/akash-chhabria/"} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="fab fa-linkedin" icon={faLinkedin}/></a>
-                            </li>
-                            <li className="Social-list">
-                                <a href={"https://github.com/muztank10/"} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="fab fa-github-square" icon={faGithubSquare}/></a>
-                            </li>
-                        </div>
-                    </ul>
-                </div>
+                    <div className="Social-wrapper">
+                        <li className="Social-list">
+                            <a href={Pdf} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="far fa-file-pdf" icon={faFilePdf} /></a>
+                        </li>
+                        <li className="Social-list">
+                            <a href={"https://www.instagram.com/akashrai_10/"} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="instant fa-fw" icon={faInstagram} /></a>
+                        </li>
+                        <li className="Social-list">
+                            <a href={"https://www.linkedin.com/in/akash-chhabria/"} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="fab fa-linkedin" icon={faLinkedin}/></a>
+                        </li>
+                        <li className="Social-list">
+                            <a href={"https://github.com/muztank10/"} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="fab fa-github-square" icon={faGithubSquare}/></a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
         );
     }
 }

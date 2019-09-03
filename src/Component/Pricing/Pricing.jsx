@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+/*Styling for (unused) Pricing Component*/
 
+import React, {Component} from 'react';
 import './Pricing.css';
 import {Button, Col, Container, Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
-// import Footer from "./Footer/Footer";
 
 class Pricing extends Component {
     render(){
@@ -30,7 +30,7 @@ class Pricing extends Component {
                             <p className="Pricing-text">The shoot will take place with one outfit and in one location, I will provide <u>5 photos</u> delivered to you within a week.</p>
                             <hr/>
                             <div className="Price">
-                                    <span className="Price">35/hr <b>CAD</b></span>
+                                    <span className="Price">Blank <b>CAD</b></span>
                             </div>
                         </Col>
                         <Col lg={3} className="Pricing-option">
@@ -39,7 +39,7 @@ class Pricing extends Component {
                             <p  className="Pricing-text">Will provide pictures of the band playing and photos of the crowd. I will provide <u>20 photos</u> delivered to you within 2 weeks .</p>
                             <hr/>
                             <div className="Price">
-                                    <span className="Price">50/hr <b>CAD</b></span>
+                                    <span className="Price">Blank<b>CAD</b></span>
                             </div>
                         </Col>
                         <Col lg={3} className="Pricing-option">
@@ -48,7 +48,7 @@ class Pricing extends Component {
                             <p className="Pricing-text">The shoot will take place in one location with two outfits, I will provide <u>5-10 photos</u> delivered to you within a week. </p>
                             <hr/>
                             <div className="Price">
-                                    <span className="Price">40/hr <b>CAD</b></span>
+                                    <span className="Price">Blank <b>CAD</b></span>
                             </div>
                         </Col>
                         <Col lg={3} className="Pricing-option">
@@ -59,7 +59,7 @@ class Pricing extends Component {
                                 quibusdam ipsam iusto reprehenderit hic saepe nesciunt sed illo.</p>
                             <hr/>
                             <div className="Price">
-                                    <span className="Price">199 <b>CAD</b></span>
+                                    <span className="Price">Blank<b>CAD</b></span>
                             </div>
                         </Col>
                     </Row>
@@ -76,7 +76,7 @@ class Pricing extends Component {
                                 quibusdam ipsam iusto reprehenderit hic saepe nesciunt sed illo.</p>
                             <hr/>
                             <div className="Price">
-                                    <span className="Price">199 <b>CAD</b></span>
+                                    <span className="Price">Blank <b>CAD</b></span>
                             </div>
                         </Col>
                         <Col lg={3} className="Pricing-option">
@@ -87,7 +87,7 @@ class Pricing extends Component {
                                 quibusdam ipsam iusto reprehenderit hic saepe nesciunt sed illo.</p>
                             <hr/>
                             <div className="Price">
-                                    <span className="Price">199 <b>CAD</b></span>
+                                    <span className="Price">Blank<b>CAD</b></span>
                             </div>
                         </Col>
                         <Col lg={3}/>
@@ -95,12 +95,10 @@ class Pricing extends Component {
                     <Row className="btn-wrapper-wrap">
                         <Col lg={4}/>
                         <Col lg={4} className="btn-wrapper">
-                            {/*<Button className="btn" block onClick={this.changeState}>Continue</Button>*/}
                             <Link to='/About' className={"anchor"}><Button className="btn" block>Learn About me</Button></Link>
                         </Col>
                         <Col lg={4}/>
                     </Row>
-                    {/*<Footer/>*/}
                 </Container>
             </div>
         );

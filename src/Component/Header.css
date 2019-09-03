@@ -1,5 +1,5 @@
 
-
+/*Styling for Title*/
 .Akash{
     /*margin: 30% 0 5% 0;*/
     padding: 1rem 3rem;
@@ -8,6 +8,7 @@
     color: #F5F5F5;
 }
 
+/*Styling for row containing title*/
 .Logo {
     display:flex;
     min-height: 100%;

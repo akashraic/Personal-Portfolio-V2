@@ -1,5 +1,6 @@
-import React from 'react';
+/*Component to close Sidebar and Modal Gallery view*/
 
+import React from 'react';
 import './CloseDrawerButton.css'
 
 const CloseDrawerButton = props => (

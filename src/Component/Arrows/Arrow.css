@@ -1,3 +1,5 @@
+
+/*Stying for arrow facing in the right direction*/
 .right {
     position: fixed;
     top: 50%;
@@ -12,6 +14,7 @@
     padding: 0;
 }
 
+/*Stying for arrow facing in the left direction*/
 .left {
     position: fixed;
     top: 50%;
@@ -26,6 +29,7 @@
     padding: 0;
 }
 
+/*Stying for each individual line in the arrow*/
 .Arrow-line {
     opacity: 0.5;
     width: 30px;
@@ -33,22 +37,27 @@
     background: #F5F5F5;
 }
 
+/*ensures that there is no outline after clicked*/
 .Arrow-line:focus {
     outline: none;
 }
 
+/*rotates one specific line for the right arrow*/
 .right .a1{
     transform: rotate(22.5deg);
 }
 
+/*rotates one specific line for the right arrow*/
 .right .a2 {
     transform: rotate(-22.5deg);
 }
 
+/*rotates one specific line for the left arrow*/
 .left .a1{
     transform: rotate(-22.5deg);
 }
 
+/*rotates one specific line for the left arrow*/
 .left .a2 {
     transform: rotate(22.5deg);
 }

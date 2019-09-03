@@ -1,3 +1,4 @@
+/*Styles Toolbar and makes it sticky*/
 .Toolbar {
     position:fixed;
     top:0;
@@ -8,6 +9,14 @@
     margin-bottom: 2rem;
 }
 
+/*Styles Wrapper for navigation items*/
+.Toolbar-nav {
+    display: flex;
+    height:100%;
+    align-items: center;
+}
+
+/*Style navigation list for toolbar*/
 .Toolbar-nav-list {
     list-style: none;
     margin: 0;
@@ -15,12 +24,7 @@
     display: flex;
 }
 
-.Toolbar-nav {
-    display: flex;
-    height:100%;
-    align-items: center;
-}
-
+/*Styles each item in the navigation section*/
 .Toolbar-nav-items {
     padding: 0 1rem;
     height: 56px;
@@ -29,10 +33,12 @@
     align-items: center;
 }
 
+/*creates space between logo and navigation*/
 .spacer {
     flex: 1;
 }
 
+/*Styles link portion of logo*/
 .Toolbar-logo a{
     margin-left: 2rem;
     color: #F5F5F5;
@@ -41,25 +47,28 @@
     font-family: 'Orbitron', sans-serif;
 }
 
+/*Styles link portion of navigation list*/
 .Toolbar-nav-items a {
     color: #f5f5f5;
     text-decoration:none;
     font-size: 2rem;
 }
 
+/*Creates animation on hovering and clicking of navigation list*/
 .Toolbar-nav-items:hover,
 .Toolbar-nav-items:active {
     background: #F5F5F5;
     transition: 0.3s;
 }
 
+/*Creates animation on hovering and clicking of navigation list link*/
 .Toolbar-nav-items:hover a,
 .Toolbar-nav-items:active {
     color: #2a2c2f;
     transition: 0.3s;
 }
 
-
+/*Responsive media*/
 @media screen and (min-width: 378px) and (max-width: 768px) {
 
     .Toolbar-nav-items a {
@@ -74,7 +83,6 @@
     .Toolbar-nav-items {
         padding: 0 0.5rem;
     }
-
 }
 
 @media screen and (max-width: 378px) {

@@ -1,3 +1,4 @@
+/*Styling for drawer button*/
 .Toggle-btn {
     display: flex;
     flex-direction: column;
@@ -12,16 +13,19 @@
     box-sizing:border-box;
 }
 
+/*Prevents outline when drawer button is clicked*/
 .Toggle-btn:focus {
     outline:none;
 }
 
+/*Styling for each specific line*/
 .Toggle-btn-line {
     width:30px;
     height:2px;
     background: #F5F5F5;
 }
 
+/*Responsive design*/
 @media screen and (min-width: 378px) and (max-width: 768px) {
     .Toggle-btn {
         height: 20px;

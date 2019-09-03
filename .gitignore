@@ -32,3 +32,8 @@ dist/
 node_modules/
 aws-exports.js
 awsconfiguration.json
+
+#confidential info
+index.js
+package.json
+package-lock.json

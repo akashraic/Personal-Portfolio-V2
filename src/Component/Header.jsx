@@ -1,9 +1,10 @@
+/*Component for header section of website*/
+
 import React, {Component} from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import './Header.css';
 
 class Header extends Component {
-
     render() {
         return (
             <div className="Home">

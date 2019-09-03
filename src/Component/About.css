@@ -1,24 +1,29 @@
+/*Styling for About container*/
 .About {
     width:100%;
     height: auto;
     margin:0 0 100px 0;
 }
 
+/*Styling for About me Title*/
 .Title-about {
     text-align:center;
     color: #F5F5F5;
     margin: 5rem 0 2rem 0;
 }
 
+/*Styling for Persons image*/
 .About-Akash {
     width: 100%;
     height: auto;
     margin: 7rem 3rem;
     padding: 5rem;
+    /*CSS below is because the image was displayed horizontally*/
     transform: rotate(270deg);
     border-radius: 40px;
 }
 
+/*Styling for ABout text*/
 .Text {
     font-size: 22px;
     padding: 1rem 0 3rem 0;
@@ -27,18 +32,13 @@
     margin: 0 25% 0 0;
 }
 
-.Title-name {
-    text-align:center;
-    color: #F5F5F5;
-    margin-left: 25%;
-    padding: 3rem 0;
-}
-
+/*Styles Contact title*/
 .Contact-title {
     color: #F5F5F5;
     margin: 0 25% 0 0;
 }
 
+/*Styles contact info text*/
 .Info-text {
     font-size: 22px;
     padding: 1rem 0 ;
@@ -48,6 +48,13 @@
     margin: 0 25% 0 0;
 }
 
+/*Styles link in the info-text section*/
+.Info-text a {
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+/*Styles social media wrappers*/
 .Social-wrap {
     display: flex;
     margin: 0 25% 0 0;
@@ -55,30 +62,31 @@
     list-style: none;
 }
 
+/*Styles the link of each social media icon individually*/
 .Social-list-about a{
     padding: 1rem 0.5rem;
     font-size: 32px;
     color: #F5F5F5;
 }
 
+/*Changes the colour of each social media icon on hover*/
 .Social-list-about a:hover{
     color: #9a9a9a;
     transition: 0.3s ease-in-out;
 }
 
+/*Styles Return home button*/
 .btn-wrapper-wrap-about {
     text-align:center;
     margin: 6rem 0;
 }
 
-
+/*Responsive styling*/
 @media screen and (min-width: 700px) and (max-width: 1200px) {
     .Text, .Contact-title, .Info-text, .Social-wrap {
         margin: 0 5rem;
     }
-
 }
-
 
 @media screen and  (max-width: 700px) {
 
@@ -97,37 +105,5 @@
 
 }
 
-/*@media screen and (max-width: 378px) {*/
-
-    /*.Text, .Contact-title, .Info-text, .Social-wrap {*/
-        /*margin: 0 5rem;*/
-    /*}*/
-
-    /*.About-Akash {*/
-        /*height:100%;*/
-        /*justify-content: center;*/
-    /*}*/
-
-/*}*/
-
-/*
-.Three {
-    background: #2a2c2f;
-    color: #2a2c2f;
-}
-
-.Skills {
-    position: absolute;
-    top: 10px;
-    width: 100%;
-    text-align: center;
-    z-index: 100;
-    display:block;
-}
-
-.Skills-list {
-    list-style: none;
-    color: #F5F5F5;
-}*/
 
 
