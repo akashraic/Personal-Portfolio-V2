@@ -1,3 +1,12 @@
+## Personal Portfolio
+
+This project is my personal portfolio for my photography, programming, and project 
+Management initiatives.
+
+All the code is documented and is available for use. However, please send me a message if you plan on using the code
+
+you can find the original website at [akashrai.me](https://akashrai.me)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
